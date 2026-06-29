@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NA CASA - Crianza acompañada</title>
+    <meta name="description"
+        content="Proyecto NA CASA. Acompañamiento profesional a familias con niños de 0 a 6 años, centrado en la vida diaria del hogar." />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <!-- HEADER / MENÚ -->
+    <header class="site-header">
+        <div class="container header-content">
+                  <a href="index.html" class="logo">
+        <img src="img/NA CASA LOGO_LOGO POSITIVO.png" alt="NA CASA" class="logo-img">
+      </a>
+
+            <nav class="main-nav">
+                <a href="index.html">Inicio</a>
+                <a href="necesidad.html">Necesidad</a>
+                <a href="proyecto.html">Proyecto</a>
+                <a href="fundamento.html">Fundamento</a>
+                <a href="objetivos.html">Objetivos</a>
+                <a href="areas.html">Áreas</a>
+                <a href="metodologia.html">Metodología</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="tarifas.html">Tarifas</a>
+                <a href="colaboracion.html">Colaboración</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ÁREAS -->
+        <section id="areas" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">ÁREAS DE INTERVENCIÓN</p>
+                    <h2>¿En qué acompaña NA CASA?</h2>
+                    <p>
+                        Las áreas de intervención se definen según las necesidades reales de cada familia
+                        y su momento evolutivo.
+                    </p>
+                </div>
+
+                <div class="cards-grid four-cols">
+                    <article class="card">
+                        <h3>Sueño</h3>
+                        <p>Rutinas, despertares, conciliación y descanso familiar.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Alimentación</h3>
+                        <p>Hábitos, rechazo, organización de comidas y acompañamiento respetuoso.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Control de esfínteres</h3>
+                        <p>Orientación funcional y adaptada al niño.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Autonomía</h3>
+                        <p>Vestido, higiene, orden y participación en tareas cotidianas.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Lenguaje y comunicación</h3>
+                        <p>Estimulación y apoyo a la interacción diaria.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Conducta y límites</h3>
+                        <p>Normas, coherencia educativa y manejo de situaciones complejas.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Regulación emocional</h3>
+                        <p>Acompañamiento en rabietas, frustración e inseguridad.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Rutinas familiares</h3>
+                        <p>Organización del día a día y búsqueda de mayor equilibrio en casa.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>“No te damos un plan, lo construimos contigo en tu casa.”</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

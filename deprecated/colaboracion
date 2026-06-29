@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NA CASA - Crianza acompañada</title>
+    <meta name="description"
+        content="Proyecto NA CASA. Acompañamiento profesional a familias con niños de 0 a 6 años, centrado en la vida diaria del hogar." />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <!-- HEADER / MENÚ -->
+    <header class="site-header">
+        <div class="container header-content">
+                  <a href="index.html" class="logo">
+        <img src="img/NA CASA LOGO_LOGO POSITIVO.png" alt="NA CASA" class="logo-img">
+      </a>
+
+            <nav class="main-nav">
+                <a href="index.html">Inicio</a>
+                <a href="necesidad.html">Necesidad</a>
+                <a href="proyecto.html">Proyecto</a>
+                <a href="fundamento.html">Fundamento</a>
+                <a href="objetivos.html">Objetivos</a>
+                <a href="areas.html">Áreas</a>
+                <a href="metodologia.html">Metodología</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="tarifas.html">Tarifas</a>
+                <a href="colaboracion.html">Colaboración</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- PROYECTO -->
+        <section id="proyecto" class="section section-alt">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">EL PROYECTO</p>
+                    <h2>Un proyecto de acompañamiento familiar en el hogar</h2>
+                    <p>
+                        NA CASA es un servicio de asesoramiento y acompañamiento a familias con niños
+                        de 0 a 6 años, centrado en la crianza, el desarrollo y la educación infantil
+                        dentro de la vida cotidiana del hogar. Surge para ofrecer un espacio cercano,
+                        práctico y profesional donde resolver dudas reales y construir estrategias útiles
+                        para el día a día.
+                    </p>
+                </div>
+
+                <div class="cards-grid four-cols">
+                    <article class="card">
+                        <h3>Entorno natural</h3>
+                        <p>La intervención se realiza en casa, donde tienen lugar las rutinas y situaciones reales.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Enfoque preventivo</h3>
+                        <p>Se trabaja para anticiparse a las dificultades y fortalecer el bienestar familiar.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Adaptación real</h3>
+                        <p>Cada familia tiene su propia dinámica, sus necesidades y su contexto.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Coordinación con el entorno</h3>
+                        <p>Cuando es necesario, se facilita la conexión con la escuela infantil y otros profesionales.
+                        </p>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>“No te damos un plan, lo construimos contigo en tu casa.”</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

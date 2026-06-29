@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NA CASA - Crianza acompañada</title>
+    <meta name="description"
+        content="Proyecto NA CASA. Acompañamiento profesional a familias con niños de 0 a 6 años, centrado en la vida diaria del hogar." />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <!-- HEADER / MENÚ -->
+    <header class="site-header">
+        <div class="container header-content">
+                  <a href="index.html" class="logo">
+        <img src="img/NA CASA LOGO_LOGO POSITIVO.png" alt="NA CASA" class="logo-img">
+      </a>
+
+            <nav class="main-nav">
+                <a href="index.html">Inicio</a>
+                <a href="necesidad.html">Necesidad</a>
+                <a href="proyecto.html">Proyecto</a>
+                <a href="fundamento.html">Fundamento</a>
+                <a href="objetivos.html">Objetivos</a>
+                <a href="areas.html">Áreas</a>
+                <a href="metodologia.html">Metodología</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="tarifas.html">Tarifas</a>
+                <a href="colaboracion.html">Colaboración</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- METODOLOGÍA -->
+        <section id="metodologia" class="section section-alt">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">METODOLOGÍA</p>
+                    <h2>Cómo trabajamos</h2>
+                    <p>
+                        El modelo de intervención se centra en las rutinas familiares como principal
+                        contexto de aprendizaje y cambio.
+                    </p>
+                </div>
+
+                <div class="steps-grid">
+                    <article class="step-card">
+                        <span class="step-number">1</span>
+                        <h3>Valoración inicial en domicilio</h3>
+                        <p>Se realiza una primera visita para conocer la dinámica familiar, observar rutinas y detectar
+                            necesidades.</p>
+                    </article>
+
+                    <article class="step-card">
+                        <span class="step-number">2</span>
+                        <h3>Evaluación funcional</h3>
+                        <p>Se analizan momentos cotidianos como comidas, sueño, juego, transiciones y convivencia.</p>
+                    </article>
+
+                    <article class="step-card">
+                        <span class="step-number">3</span>
+                        <h3>Plan personalizado</h3>
+                        <p>Se diseña una propuesta ajustada a la realidad de la familia, con estrategias claras y
+                            aplicables.</p>
+                    </article>
+
+                    <article class="step-card">
+                        <span class="step-number">4</span>
+                        <h3>Seguimiento y acompañamiento</h3>
+                        <p>Se revisan avances, se resuelven dudas y se ajusta la intervención de forma continua.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>“No te damos un plan, lo construimos contigo en tu casa.”</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

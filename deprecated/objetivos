@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NA CASA - Crianza acompañada</title>
+    <meta name="description"
+        content="Proyecto NA CASA. Acompañamiento profesional a familias con niños de 0 a 6 años, centrado en la vida diaria del hogar." />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <!-- HEADER / MENÚ -->
+    <header class="site-header">
+        <div class="container header-content">
+                  <a href="index.html" class="logo">
+        <img src="img/NA CASA LOGO_LOGO POSITIVO.png" alt="NA CASA" class="logo-img">
+      </a>
+
+            <nav class="main-nav">
+                <a href="index.html">Inicio</a>
+                <a href="necesidad.html">Necesidad</a>
+                <a href="proyecto.html">Proyecto</a>
+                <a href="fundamento.html">Fundamento</a>
+                <a href="objetivos.html">Objetivos</a>
+                <a href="areas.html">Áreas</a>
+                <a href="metodologia.html">Metodología</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="tarifas.html">Tarifas</a>
+                <a href="colaboracion.html">Colaboración</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- OBJETIVOS -->
+        <section id="objetivos" class="section section-alt">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">OBJETIVOS</p>
+                    <h2>Objetivos del proyecto</h2>
+                    <p class="highlight-text">
+                        Acompañar a las familias en el desarrollo de sus hijos, ofreciendo herramientas
+                        prácticas que mejoren la autonomía, la regulación emocional y el funcionamiento diario.
+                    </p>
+                </div>
+
+                <div class="cards-grid three-cols">
+                    <article class="card">
+                        <h3>Rutinas estables</h3>
+                        <p>Favorecer rutinas saludables y sostenibles en la vida diaria.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Autonomía</h3>
+                        <p>Mejorar la participación del niño en actividades cotidianas como vestido, higiene u
+                            organización.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Conducta</h3>
+                        <p>Orientar a las familias en la gestión de límites y conductas difíciles.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Seguridad emocional</h3>
+                        <p>Apoyar el desarrollo emocional y fortalecer la sensación de seguridad del niño.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Bienestar familiar</h3>
+                        <p>Reducir el estrés familiar y mejorar la convivencia cotidiana.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Coordinación</h3>
+                        <p>Favorecer la coherencia entre familia, escuela infantil y otros contextos relevantes.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>“No te damos un plan, lo construimos contigo en tu casa.”</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NA CASA - Crianza acompañada</title>
+    <meta name="description"
+        content="Proyecto NA CASA. Acompañamiento profesional a familias con niños de 0 a 6 años, centrado en la vida diaria del hogar." />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <!-- HEADER / MENÚ -->
+    <header class="site-header">
+        <div class="container header-content">
+                  <a href="index.html" class="logo">
+        <img src="img/NA CASA LOGO_LOGO POSITIVO.png" alt="NA CASA" class="logo-img">
+      </a>
+
+            <nav class="main-nav">
+                <a href="index.html">Inicio</a>
+                <a href="necesidad.html">Necesidad</a>
+                <a href="proyecto.html">Proyecto</a>
+                <a href="fundamento.html">Fundamento</a>
+                <a href="objetivos.html">Objetivos</a>
+                <a href="areas.html">Áreas</a>
+                <a href="metodologia.html">Metodología</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="tarifas.html">Tarifas</a>
+                <a href="colaboracion.html">Colaboración</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- NECESIDAD -->
+        <section id="necesidad" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">LA NECESIDAD</p>
+                    <h2>¿Por qué nace NA CASA?</h2>
+                    <p>
+                        Muchas familias reciben información constante sobre crianza, desarrollo y
+                        educación infantil, pero no siempre encuentran orientación profesional,
+                        realista y adaptada a su situación. Entre redes sociales, consejos
+                        contradictorios y modelos poco alcanzables, es fácil que aparezcan la
+                        duda, la presión y la inseguridad.
+                    </p>
+                </div>
+
+                <div class="cards-grid four-cols">
+                    <article class="card">
+                        <h3>Exceso de información</h3>
+                        <p>
+                            Las familias reciben recomendaciones constantes, pero no siempre cuentan
+                            con una guía clara y fiable.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Modelos poco realistas</h3>
+                        <p>
+                            A menudo se difunden formas de crianza difíciles de sostener en la vida cotidiana.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Inseguridad en el día a día</h3>
+                        <p>
+                            Dudas sobre sueño, alimentación, límites, autonomía o regulación emocional
+                            generan malestar y bloqueo.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Necesidad de acompañamiento real</h3>
+                        <p>
+                            Las familias necesitan apoyo cercano, profesional y ajustado a su propia realidad.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>“No te damos un plan, lo construimos contigo en tu casa.”</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
