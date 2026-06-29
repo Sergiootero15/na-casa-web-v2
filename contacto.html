@@ -1,61 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contacta con NA CASA.">
-  <title>Contacto | NA CASA</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | NA CASA</title>
+    <meta name="description"
+        content="Contacta con NA CASA para solicitar información sobre acompañamiento familiar en el hogar." />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container nav-wrapper">
+
+    <!-- HEADER / MENU -->
+    <header class="site-header">
+        <div class="container header-content">
             <a href="index.html" class="logo">
-        <img src="img/NA CASA LOGO_LOGO POSITIVO.png" alt="NA CASA" class="logo-img">
-      </a>
-      <nav class="main-nav">
-        <a href="index.html">Inicio</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="sobre-mi.html">Sobre mí</a>
-        <a href="recursos.html">Recursos</a>
-        <a href="contacto.html" class="btn btn-small">Contacto</a>
-      </nav>
-    </div>
-  </header>
+                <img src="img/NA CASA LOGO_LOGO POSITIVO.png" alt="NA CASA" class="logo-img">
+            </a>
 
-  <main class="page-main">
-    <section class="section">
-      <div class="container narrow">
-        <p class="eyebrow">Contacto</p>
-        <h1>Hablemos</h1>
-        <p class="lead">Página lista para poner un formulario, email, teléfono o botón de WhatsApp.</p>
+            <nav class="main-nav">
+                <a href="index.html">Inicio</a>
+                <a href="proyecto.html">Proyecto</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="tarifas.html">Tarifas</a>
+                <a href="contacto.html" class="active">Contacto</a>
+            </nav>
+        </div>
+    </header>
 
-        <form class="contact-form">
-          <label>
-            Nombre
-            <input type="text" name="name" placeholder="Tu nombre">
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="tu@email.com">
-          </label>
-          <label>
-            Mensaje
-            <textarea name="message" rows="6" placeholder="Cuéntame en qué necesitas ayuda"></textarea>
-          </label>
-          <button type="submit" class="btn">Enviar</button>
-        </form>
-      </div>
-    </section>
-  </main>
+    <main>
+        <!-- CONTACTO -->
+        <section id="contacto" class="section section-alt">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="section-heading">
+                        <p class="section-label">CONTACTO</p>
+                        <h1>Hablemos de vuestra situación</h1>
+                        <p>
+                            Si quieres saber si NA CASA encaja con lo que necesitáis, puedes enviar un
+                            mensaje con una breve descripción de vuestra realidad familiar.
+                        </p>
+                        <p>
+                            Te responderé para concretar el primer paso y valorar juntas el tipo de
+                            acompañamiento más adecuado.
+                        </p>
+                    </div>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div><strong>NA CASA</strong></div>
-      <div><a href="index.html">Inicio</a></div>
-    </div>
-  </footer>
+                    <form class="contact-form card" action="#" method="post">
+                        <label>
+                            Nombre
+                            <input type="text" name="name" placeholder="Tu nombre" autocomplete="name">
+                        </label>
 
-  <script src="assets/js/main.js"></script>
+                        <label>
+                            Email
+                            <input type="email" name="email" placeholder="tu@email.com" autocomplete="email">
+                        </label>
+
+                        <label>
+                            Mensaje
+                            <textarea name="message" rows="6"
+                                placeholder="Cuéntame en qué necesitáis ayuda"></textarea>
+                        </label>
+
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Proyecto NA CASA · Crianza acompañada</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>

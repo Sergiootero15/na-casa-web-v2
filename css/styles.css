@@ -197,7 +197,7 @@ p {
 .main-nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 8px;
   flex-wrap: wrap;
 }
@@ -220,6 +220,12 @@ p {
   background: #f3e7df;
   color: var(--title);
   transform: translateY(-1px);
+}
+
+.main-nav a.active {
+  background: var(--primary);
+  color: #ffffff;
+  box-shadow: 0 10px 20px rgba(201, 119, 88, 0.25);
 }
 
 .hero {
@@ -401,6 +407,54 @@ p {
   text-align: center;
 }
 
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.7fr);
+  gap: 42px;
+  align-items: start;
+}
+
+.contact-form {
+  display: grid;
+  gap: 18px;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--title);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid var(--border-strong);
+  border-radius: 16px;
+  padding: 14px 16px;
+  font: inherit;
+  color: var(--text);
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(201, 119, 88, 0.16);
+}
+
+.contact-form .btn {
+  justify-self: start;
+}
+
 .steps-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -486,6 +540,10 @@ p {
 
   .hero-content {
     max-width: 640px;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
   }
 }
 
