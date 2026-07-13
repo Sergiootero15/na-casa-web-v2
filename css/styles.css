@@ -62,9 +62,36 @@ a {
   text-decoration: none;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+}
+
 button,
 a {
   -webkit-tap-highlight-color: transparent;
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 2000;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--title);
+  font-weight: 700;
+  box-shadow: var(--shadow-md);
+  transform: translateY(calc(-100% - 24px));
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
 }
 
 .container {
@@ -121,6 +148,11 @@ h1 {
 }
 
 h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-bottom: 16px;
+}
+
+.page-title {
   font-size: clamp(2rem, 4vw, 3.2rem);
   margin-bottom: 16px;
 }
@@ -209,10 +241,6 @@ p {
 }
 
 .main-nav a:hover {
-  background: var(--surface);
-  color: var(--title);
-  transform: translateY(-1px);
-
   background: var(--secondary);
   color: var(--title);
   transform: translateY(-1px);
@@ -310,21 +338,16 @@ p {
 .btn-primary {
   background: var(--primary);
   color: #ffffff;
-  box-shadow: var(--shadow-md);
-  color: #ffffff;
   box-shadow: 0 12px 24px rgba(43, 111, 159, 0.25);
 }
 
 .btn-primary:hover {
   background: var(--primary-dark);
-  box-shadow: var(--shadow-lg);
   box-shadow: 0 18px 34px rgba(36, 93, 134, 0.32);
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.14);
   color: #ffffff;
-  border-color: rgba(255, 255, 255, 0.34);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   background: rgba(255, 255, 255, 0.28);
@@ -355,15 +378,6 @@ p {
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 28px 24px;
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.28s ease, box-shadow 0.28s ease,
-    border-color 0.28s ease;
-
-  position: relative;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 28px 24px;
   box-shadow: 0 10px 24px rgba(23, 59, 87, 0.07);
   transition: transform 0.28s ease, box-shadow 0.28s ease,
     border-color 0.28s ease, background-color 0.28s ease;
@@ -371,10 +385,6 @@ p {
 
 .card:hover,
 .step-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-md);
-  border-color: rgba(43, 111, 159, 0.28);
-
   transform: translateY(-6px);
   box-shadow: 0 18px 38px rgba(23, 59, 87, 0.13);
   border-color: var(--primary);
@@ -441,10 +451,11 @@ p {
   resize: vertical;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
   border-color: var(--primary);
   box-shadow: 0 0 0 4px var(--focus-ring);
+  outline: none;
 }
 
 .contact-form .btn {
@@ -473,35 +484,6 @@ p {
   color: #ffffff;
   font-weight: 800;
   box-shadow: 0 12px 24px rgba(43, 111, 159, 0.25);
-}
-
-.pricing-grid {
-  align-items: stretch;
-}
-
-.price-card {
-  text-align: center;
-  padding-top: 34px;
-  padding-bottom: 34px;
-}
-
-.price-card h3 {
-  margin-bottom: 14px;
-}
-
-.price {
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1;
-  font-weight: 800;
-  color: var(--primary);
-  margin-bottom: 10px;
-}
-
-.price-card.featured {
-  background: linear-gradient(180deg, var(--sage-soft) 0%, var(--surface) 100%);
-  border-color: rgba(82, 125, 114, 0.36);
-  box-shadow: var(--shadow-md);
-  transform: translateY(-4px);
 }
 
 .final-cta {
@@ -558,14 +540,16 @@ p {
   }
 
   .main-nav {
+    width: 100%;
     justify-content: flex-start;
     gap: 6px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
   }
 
   .main-nav a {
-    padding: 9px 12px;
-    font-size: 0.9rem;
-
     padding: 10px 14px;
     font-size: 0.95rem;
     font-weight: 600;
@@ -573,12 +557,7 @@ p {
     border-radius: 999px;
     transition: background-color 0.25s ease, color 0.25s ease,
       transform 0.25s ease, box-shadow 0.25s ease;
-  }
-
-  .main-nav a.active {
-    background: var(--primary);
-    color: #ffffff;
-    box-shadow: 0 10px 20px rgba(43, 111, 159, 0.24);
+    flex: 0 0 auto;
   }
 
   .section {
@@ -629,10 +608,6 @@ p {
 
   .btn {
     width: 100%;
-  }
-
-  .price-card.featured {
-    transform: none;
   }
 
   .quote-box p {
