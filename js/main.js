@@ -6,10 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const updateHeaderShadow = () => {
-    header.style.boxShadow =
-      window.scrollY > 20
-        ? "0 12px 30px rgba(76, 47, 36, 0.08)"
-        : "none";
+    header.classList.toggle("is-scrolled", window.scrollY > 20);
   };
 
   updateHeaderShadow();
