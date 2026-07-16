@@ -30,18 +30,102 @@
     </header>
 
     <main id="contenido-principal">
-        <section class="section section--alternate">
-            <div class="tangram-decoration" aria-hidden="true">
-                <span class="tangram-shape tangram-shape--primary"></span>
-                <span class="tangram-shape tangram-shape--sage"></span>
-                <span class="tangram-shape tangram-shape--human"></span>
-            </div>
-            <div class="container">
-                <div class="section-heading">
+        <section class="plans-hero">
+            <div class="container plans-hero__layout">
+                <div class="plans-hero__content">
                     <p class="section-label">PLANES</p>
-                    <h1 class="page-title">Planes de acompañamiento</h1>
-                    <p>Estamos preparando la información detallada sobre los planes de acompañamiento de NA CASA.</p>
+                    <h1>Distintas formas de acompañaros</h1>
+                    <p class="plans-hero__lead">Cada familia llega con una situación diferente. Los planes permiten organizar el acompañamiento de una manera clara, manteniendo la flexibilidad necesaria para adaptarse a vuestra realidad.</p>
+                    <div class="home-actions">
+                        <a href="contacto.html" class="button button--primary">Cuéntanos qué necesitáis</a>
+                        <a href="#modalidades" class="button button--secondary">Ver los planes</a>
+                    </div>
                 </div>
+                <div class="plans-hero__note">
+                    <p class="plans-hero__note-label">UN FORMATO PARA CADA MOMENTO</p>
+                    <p>La necesidad planteada, la profundidad del apoyo y el seguimiento necesario ayudan a decidir cómo organizar el proceso.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alternate plans-choice-section" aria-labelledby="titulo-elegir">
+            <div class="container plans-choice">
+                <div><p class="section-label">ANTES DE ELEGIR</p><h2 id="titulo-elegir">El formato se decide desde vuestra situación</h2></div>
+                <div class="plans-choice__content">
+                    <p>No todas las familias necesitan el mismo nivel de acompañamiento. El número de sesiones o el precio no explican por sí solos qué opción puede encajar mejor.</p>
+                    <p>Antes de decidir, es importante comprender qué está ocurriendo, qué necesitáis y cuánto apoyo puede resultar útil. Si la situación cambia, las propuestas también pueden revisarse.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="modalidades" class="section plans-modalities-section" aria-labelledby="titulo-modalidades">
+            <div class="container">
+                <div class="section-heading plans-heading">
+                    <p class="section-label">MODALIDADES</p>
+                    <h2 id="titulo-modalidades">Formas de organizar el acompañamiento</h2>
+                    <p>La documentación disponible recoge estos formatos, aunque sus condiciones comerciales todavía necesitan una versión única y aprobada.</p>
+                </div>
+                <div class="plans-grid">
+                    <article class="plan-card plan-card--blue">
+                        <div><p class="plan-card__eyebrow">PROCESO PERSONALIZADO</p><h3>Plan de intervención personalizado</h3><p>Puede encajar cuando una familia necesita comprender su situación, definir objetivos y trabajar con continuidad sobre las rutinas cotidianas.</p></div>
+                        <div class="plan-card__details"><h4>Contenido respaldado</h4><ul><li>Comprensión inicial de la realidad familiar.</li><li>Objetivos y estrategias adaptadas.</li><li>Revisión y ajuste durante el proceso.</li></ul></div>
+                        <!-- TODO: validar contenido comercial antes de publicar -->
+                        <div class="plan-card__pending"><p class="review-note__label">PENDIENTE DE VALIDAR</p><p>Confirmar sesiones, duración, modalidad, seguimiento incluido y condiciones del plan.</p></div>
+                        <a href="contacto.html" class="text-link">Consultar este formato <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="plan-card plan-card--wellbeing">
+                        <div><p class="plan-card__eyebrow">ORIENTACIÓN CONCRETA</p><h3>Asesoramiento puntual</h3><p>Puede encajar cuando la familia busca orientación sobre una situación específica sin plantear inicialmente un proceso continuado.</p></div>
+                        <div class="plan-card__details"><h4>Contenido respaldado</h4><ul><li>Escucha de la situación planteada.</li><li>Orientación específica.</li><li>Propuestas aplicables al día a día.</li></ul></div>
+                        <!-- TODO: validar contenido comercial antes de publicar -->
+                        <div class="plan-card__pending"><p class="review-note__label">PENDIENTE DE VALIDAR</p><p>Confirmar duración, lugar, disponibilidad, seguimiento y condiciones de esta modalidad.</p></div>
+                        <a href="contacto.html" class="text-link">Consultar este formato <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="plan-card">
+                        <div><p class="plan-card__eyebrow">FORMATO A DISTANCIA</p><h3>Consulta o seguimiento online</h3><p>Los documentos contemplan el formato online tanto para consultas concretas como para determinados seguimientos.</p></div>
+                        <div class="plan-card__details"><h4>Contenido respaldado</h4><ul><li>Resolución de dudas concretas.</li><li>Posible revisión del proceso.</li><li>Adaptación según las necesidades del momento.</li></ul></div>
+                        <!-- TODO: validar contenido comercial antes de publicar -->
+                        <div class="plan-card__pending"><p class="review-note__label">PENDIENTE DE VALIDAR</p><p>Confirmar si es una modalidad independiente, un seguimiento o ambas opciones, junto con su duración y condiciones.</p></div>
+                        <a href="contacto.html" class="text-link">Consultar este formato <span aria-hidden="true">→</span></a>
+                    </article>
+                </div>
+                <!-- TODO: sustituir tarifas provisionales por la versión comercial aprobada -->
+                <aside class="plans-pricing-review" aria-label="Tarifas pendientes de validación">
+                    <div><p class="review-note__label">TARIFAS PENDIENTES DE VALIDAR</p><h3>La información comercial todavía no tiene una versión única</h3></div>
+                    <p>Confirmar los precios, duración, número de sesiones y condiciones incluidas en cada plan antes de publicar esta información.</p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section section--wellbeing plans-common-section" aria-labelledby="titulo-comparten">
+            <div class="container plans-common">
+                <div><p class="section-label">EN TODOS LOS FORMATOS</p><h2 id="titulo-comparten">Una misma manera de acompañar</h2><p>El formato puede cambiar; estos principios permanecen en el centro del proceso.</p></div>
+                <ul class="plans-common__list">
+                    <li><strong>Escucha inicial</strong><span>Comprender antes de proponer.</span></li><li><strong>Adaptación</strong><span>Partir de la realidad de cada familia.</span></li><li><strong>Participación familiar</strong><span>Construir las decisiones juntos.</span></li><li><strong>Aplicación cotidiana</strong><span>Plantear estrategias realistas.</span></li><li><strong>Revisión</strong><span>Ajustar cuando cambian las necesidades.</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section plans-related-section" aria-labelledby="titulo-primeros-meses">
+            <div class="container plans-related">
+                <div><p class="section-label">UNA ETAPA PROPIA</p><h2 id="titulo-primeros-meses">Los primeros meses tienen necesidades y ritmos propios</h2><p>Conoce el espacio específico de NA CASA para esta etapa sin duplicar aquí toda su explicación.</p><a href="cero-a-seis-meses.html" class="text-link">Descubrir 0 a 6 meses <span aria-hidden="true">→</span></a></div>
+                <!-- TODO: validar contenido comercial antes de publicar -->
+                <aside class="review-note" aria-label="Relación comercial pendiente de validación"><p class="review-note__label">PENDIENTE DE VALIDAR</p><p>Confirmar si el acompañamiento de 0 a 6 meses forma parte del catálogo de planes, funciona como modalidad independiente o mantiene otra relación comercial.</p></aside>
+            </div>
+        </section>
+
+        <section class="section section--alternate plans-guidance-section" aria-labelledby="titulo-orientacion">
+            <div class="container plans-guidance">
+                <div><p class="section-label">ORIENTACIÓN</p><h2 id="titulo-orientacion">Lo que sí puede aclararse antes de empezar</h2></div>
+                <div class="plans-guidance__items"><article><h3>¿Cómo sé qué formato elegir?</h3><p>Comprendiendo primero la situación, las prioridades y el nivel de apoyo que necesitáis.</p></article><article><h3>¿Puede ajustarse el formato?</h3><p>Sí. La documentación contempla revisar las propuestas conforme evoluciona la familia.</p></article></div>
+                <!-- TODO: validar contenido comercial antes de publicar -->
+                <aside class="review-note" aria-label="Información pendiente de confirmar"><p class="review-note__label">INFORMACIÓN PENDIENTE DE CONFIRMAR</p><p>Definir dónde se realiza cada modalidad, el ámbito geográfico, los posibles desplazamientos y qué seguimiento está incluido en cada caso.</p></aside>
+            </div>
+        </section>
+
+        <section class="section section--deep plans-final-cta" aria-labelledby="titulo-contactar-planes">
+            <div class="container plans-final-cta__content">
+                <p class="section-label">HABLEMOS</p><h2 id="titulo-contactar-planes">No tenéis que decidirlo sin acompañamiento</h2><p>Contadnos qué necesitáis y os ayudaremos a identificar qué formato puede encajar mejor con vuestro momento.</p>
+                <div class="home-actions"><a href="contacto.html" class="button button--light">Contactar</a><a href="https://wa.me/34XXXXXXXXX?text=Hola%2C%20he%20visto%20la%20web%20de%20NA%20CASA%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n." class="button button--outline-light" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a></div>
             </div>
         </section>
     </main>
