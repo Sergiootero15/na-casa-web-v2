@@ -669,13 +669,36 @@ p {
 .contact-layout {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.7fr);
-  gap: var(--gap-layout);
+  grid-template-areas: "label ." "title form" "copy form";
+  column-gap: var(--gap-layout);
+  row-gap: 0;
   align-items: start;
 }
 
+.contact-layout > .section-heading {
+  display: contents;
+}
+
+.contact-layout .section-label { grid-area: label; }
+.contact-layout h1 { grid-area: title; }
+.contact-copy { grid-area: copy; max-width: 620px; }
+
 .contact-form {
+  grid-area: form;
   display: grid;
-  gap: 18px;
+  gap: 16px;
+  padding: clamp(1.35rem, 2.5vw, 1.75rem);
+  border-color: rgba(191, 210, 218, 0.78);
+  border-radius: var(--radius-small);
+  background: var(--color-background);
+  box-shadow: 0 8px 24px rgba(23, 59, 87, 0.07);
+}
+
+.contact-form.card:hover {
+  border-color: rgba(191, 210, 218, 0.78);
+  background: var(--color-background);
+  box-shadow: 0 8px 24px rgba(23, 59, 87, 0.07);
+  transform: none;
 }
 
 .contact-form label {
@@ -1365,6 +1388,12 @@ p {
 
   .contact-layout {
     grid-template-columns: 1fr;
+    grid-template-areas: "label" "title" "copy" "form";
+    row-gap: 0;
+  }
+
+  .contact-form {
+    margin-top: clamp(1.5rem, 4vw, 2rem);
   }
 }
 
@@ -1448,6 +1477,10 @@ p {
     opacity: 0.22;
     transform: scale(0.7);
     transform-origin: top right;
+  }
+
+  #contacto .tangram-decoration {
+    display: none;
   }
 }
 
