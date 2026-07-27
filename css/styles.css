@@ -1937,3 +1937,113 @@ p {
   }
 
 }
+
+/* Servicios de 0 a 6 meses */
+.first-months-services {
+  padding-block: clamp(3.75rem, 7vw, 5.5rem);
+}
+
+.first-months-services__heading {
+  margin-bottom: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.first-months-services__heading h2::after {
+  display: none;
+}
+
+.first-months-services__heading > p:last-child {
+  font-size: clamp(1.05rem, 1.5vw, 1.18rem);
+}
+
+.first-months-services__grid {
+  align-items: stretch;
+}
+
+.first-months-services__grid .first-months-service {
+  border-color: var(--color-border);
+  box-shadow: none;
+}
+
+.first-months-service .service-card__commercial {
+  padding-top: 18px;
+  border-top: 1px solid var(--color-border);
+}
+
+.first-months-service__place {
+  grid-template-columns: 1fr;
+  padding: 0 0 18px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.first-months-service__options {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  border-radius: 0;
+  background: transparent;
+  list-style: none;
+}
+
+.first-months-service__options li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(88px, auto);
+  gap: 16px;
+  align-items: end;
+  padding: 18px 0 0;
+}
+
+.first-months-service__options li + li {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--color-border);
+}
+
+.first-months-service__field {
+  display: grid;
+  min-width: 0;
+  gap: 4px;
+  color: var(--color-text-heading);
+  font-weight: 700;
+}
+
+.first-months-service__field--price {
+  justify-items: end;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.first-months-service__field--price strong {
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+}
+
+.first-months-service__label {
+  color: var(--color-primary);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.first-months-services__cta {
+  margin-top: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+@media (max-width: 640px) {
+  .first-months-services__cta {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .first-months-service__options li {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .first-months-service__field--price {
+    justify-items: start;
+    text-align: left;
+  }
+}
