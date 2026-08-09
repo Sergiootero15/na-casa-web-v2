@@ -144,7 +144,7 @@
 @media (max-width: 420px) {
   .service-card__facts { grid-template-columns: 1fr; gap: 10px; }
 }
-/* 0 a 6 meses */
+/* 0 a 6 años */
 .first-months-hero { padding: clamp(4rem, 8vw, 6.5rem) 0; background: linear-gradient(138deg, var(--color-background) 0 74%, var(--color-card-blue) 74% 100%); }
 .first-months-hero__content { max-width: 900px; }
 .first-months-hero__content h1 { max-width: 15ch; margin-bottom: 24px; font-size: clamp(2.7rem, 5.6vw, 4.9rem); }
@@ -169,6 +169,14 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
   scrollbar-gutter: stable;
+}
+
+#por-que-nace,
+#diferencia-na-casa,
+#por-que-en-casa,
+#accesos-principales,
+#como-trabajamos {
+  scroll-margin-top: 20px;
 }
 
 body {
@@ -875,6 +883,60 @@ p {
   margin-top: 32px;
 }
 
+.home-index-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  align-items: start;
+  max-width: 650px;
+  margin-top: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.home-page-index {
+  min-width: 0;
+}
+
+.home-page-index__label {
+  margin-bottom: 7px;
+  color: var(--color-primary);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.home-page-index__list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-page-index__list a {
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  padding-block: 3px;
+  border-bottom: 1px solid transparent;
+  color: var(--color-primary-deep);
+  font-size: 0.91rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.home-page-index__list a:hover,
+.home-page-index__list a:focus-visible {
+  border-bottom-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.home-index-layout .home-actions {
+  justify-self: end;
+  margin-top: 0;
+}
+
 .home-hero__visual {
   position: relative;
   min-width: 0;
@@ -1044,8 +1106,10 @@ p {
 
 .access-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  width: min(100%, 1040px);
+  margin-inline: auto;
 }
 
 .access-card {
@@ -1233,6 +1297,16 @@ p {
     grid-template-columns: minmax(0, 1fr);
   }
 
+  .home-index-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+  }
+
+  .home-index-layout .home-actions {
+    justify-self: start;
+  }
+
   .home-hero {
     min-height: auto;
     padding: 3.25rem 0;
@@ -1273,10 +1347,6 @@ p {
   .home-shape--circle {
     width: 32px;
     height: 32px;
-  }
-
-  .access-grid {
-    grid-template-columns: 1fr;
   }
 
   .access-card {
@@ -1367,6 +1437,22 @@ p {
     font-size: clamp(2.6rem, 12vw, 3.25rem);
   }
 
+  .home-page-index__list {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .home-page-index__list a {
+    width: fit-content;
+    min-height: 44px;
+  }
+
+  .home-index-layout .home-actions {
+    width: 100%;
+    justify-self: stretch;
+  }
+
   .home-actions {
     flex-direction: column;
     align-items: stretch;
@@ -1381,12 +1467,244 @@ p {
     grid-template-columns: 1fr;
   }
 
+  .access-grid {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+  }
+
   .home-editorial__note {
     margin-top: 16px;
   }
 
   .home-final-cta__decoration {
     right: -150px;
+  }
+}
+
+/* Inicio: proceso compartido */
+.home-process-section .process-timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(0.8rem, 1.8vw, 1.5rem);
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-process-section .process-timeline::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  left: 0;
+  z-index: 0;
+  height: 4px;
+  border-radius: var(--radius-pill);
+  background: var(--color-primary);
+  transform: translateY(-50%);
+}
+
+.home-process-section .process-timeline::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 0;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 28px solid var(--color-primary);
+  transform: translateY(-50%);
+}
+
+.home-process-section .process-step {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  min-width: 0;
+  grid-template-rows: minmax(184px, 1fr) 40px minmax(184px, 1fr);
+  padding: 0;
+}
+
+.home-process-section .process-step::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 28px);
+  left: 50%;
+  display: block;
+  width: 3px;
+  height: 28px;
+  background: var(--color-primary);
+  transform: translateX(-50%);
+}
+
+.home-process-section .process-step:nth-child(even)::after {
+  top: 50%;
+}
+
+.home-process-section .process-step__body {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) 54px;
+  gap: 10px;
+  align-items: start;
+  align-self: end;
+  padding-bottom: 26px;
+}
+
+.home-process-section .process-step:nth-child(odd) .process-step__body {
+  grid-row: 1;
+}
+
+.home-process-section .process-step:nth-child(even) .process-step__body {
+  grid-row: 3;
+  align-self: start;
+  padding: 26px 0 0;
+}
+
+.home-process-section .process-step__number {
+  width: auto;
+  height: auto;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--color-primary);
+  font-size: clamp(2.6rem, 4vw, 3.5rem);
+  font-weight: 800;
+  line-height: 0.9;
+}
+
+.home-process-section .process-step h3 {
+  max-width: 19ch;
+  margin-bottom: 6px;
+  color: var(--color-primary-deep);
+  font-size: clamp(1.06rem, 1.45vw, 1.25rem);
+  line-height: 1.25;
+}
+
+.home-process-section .process-step p {
+  max-width: 25ch;
+  font-size: 0.9rem;
+  line-height: 1.48;
+}
+
+.home-process-section .process-step__icon {
+  width: 54px;
+  height: 54px;
+  align-self: center;
+  color: var(--color-primary-deep);
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.2;
+}
+
+@media (max-width: 1050px) {
+  .home-process-section .process-timeline {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+    padding: 4px 0 24px;
+  }
+
+  .home-process-section .process-timeline::before {
+    top: 30px;
+    right: auto;
+    bottom: 0;
+    left: 25px;
+    width: 4px;
+    height: auto;
+    transform: none;
+  }
+
+  .home-process-section .process-timeline::after {
+    top: auto;
+    right: auto;
+    bottom: -1px;
+    left: 15px;
+    border-top: 24px solid var(--color-primary);
+    border-right: 12px solid transparent;
+    border-bottom: 0;
+    border-left: 12px solid transparent;
+    transform: none;
+  }
+
+  .home-process-section .process-step {
+    grid-template-rows: auto;
+    padding: 0;
+  }
+
+  .home-process-section .process-step::after {
+    display: none;
+  }
+
+  .home-process-section .process-step__body,
+  .home-process-section .process-step:nth-child(odd) .process-step__body,
+  .home-process-section .process-step:nth-child(even) .process-step__body {
+    grid-row: 1;
+    grid-template-columns: 50px minmax(0, 1fr) 56px;
+    gap: 18px;
+    align-self: start;
+    align-items: start;
+    padding: 0;
+  }
+
+  .home-process-section .process-step__number {
+    position: relative;
+    z-index: 1;
+    min-width: 50px;
+    padding: 4px 0 8px;
+    background: var(--color-surface-alt);
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .home-process-section .process-step h3,
+  .home-process-section .process-step p {
+    max-width: 40rem;
+  }
+
+  .home-process-section .process-step__icon {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+@media (max-width: 560px) {
+  .home-process-section .process-timeline {
+    gap: 24px;
+  }
+
+  .home-process-section .process-step__body,
+  .home-process-section .process-step:nth-child(odd) .process-step__body,
+  .home-process-section .process-step:nth-child(even) .process-step__body {
+    grid-template-columns: 46px minmax(0, 1fr) 44px;
+    gap: 12px;
+  }
+
+  .home-process-section .process-step__number {
+    min-width: 46px;
+    font-size: 2.6rem;
+  }
+
+  .home-process-section .process-timeline::before {
+    top: 28px;
+    left: 22px;
+  }
+
+  .home-process-section .process-timeline::after {
+    left: 12px;
+  }
+
+  .home-process-section .process-step__icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .home-process-section .process-step p {
+    font-size: 0.88rem;
   }
 }
 
@@ -1938,7 +2256,7 @@ p {
 
 }
 
-/* Servicios de 0 a 6 meses */
+/* Servicios de 0 a 6 años */
 .first-months-services {
   padding-block: clamp(3.75rem, 7vw, 5.5rem);
 }
