@@ -3349,6 +3349,23 @@ p {
   font-size: clamp(2.45rem, 6vw, 4.8rem);
 }
 
+.plan-detail-hero h1::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin-top: 0.75rem;
+  border-radius: var(--radius-pill);
+}
+
+.plan-detail-page--day .plan-detail-hero h1::after {
+  background: var(--color-primary);
+}
+
+.plan-detail-page--night .plan-detail-hero h1::after {
+  background: var(--color-sage);
+}
+
 .plan-detail-hero__lead {
   max-width: 54ch;
   color: var(--color-text-heading);
@@ -3360,8 +3377,22 @@ p {
   margin: 0;
   padding: clamp(1.25rem, 3vw, 1.75rem);
   border: 1px solid var(--color-border);
+  border-left-width: 4px;
   border-radius: var(--radius-medium);
   background: var(--color-surface);
+}
+
+.plan-detail-page--day .plan-detail-summary {
+  border-left-color: var(--color-primary);
+}
+
+.plan-detail-page--night .plan-detail-summary {
+  border-left-color: var(--color-sage);
+}
+
+.plan-detail-page--night .plan-detail-hero .section-label,
+.plan-detail-page--night .plan-detail-summary dt {
+  color: var(--color-sage);
 }
 
 .plan-detail-summary > div {
@@ -3445,8 +3476,20 @@ p {
   letter-spacing: 0.05em;
 }
 
+.plan-detail-list--objectives li {
+  padding-left: 1.65rem;
+  counter-increment: none;
+}
+
 .plan-detail-list--objectives li::before {
-  color: var(--color-sage);
+  content: "";
+  top: 1.68rem;
+  left: 0.2rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-sage);
+  transform: translateY(-50%);
 }
 
 .plan-detail-pricing-section {
@@ -3478,17 +3521,12 @@ p {
 }
 
 .plan-detail-rates dt {
-  display: grid;
-  gap: 0.25rem;
+  min-width: 0;
 }
 
 .plan-detail-rates dt strong {
   color: var(--color-text-heading);
   font-size: 1.05rem;
-}
-
-.plan-detail-rates dt span {
-  font-size: 0.9rem;
 }
 
 .plan-detail-rates dd {
