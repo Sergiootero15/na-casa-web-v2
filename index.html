@@ -24,6 +24,7 @@
 
       <nav class="main-nav">
         <a href="index.html" class="active" aria-current="page">Inicio</a>
+        <a href="quienes-somos.html">Quiénes somos</a>
         <a href="proyecto.html">Proyecto</a>
         <a href="planes.html">Planes</a>
         <a href="cero-a-seis-meses.html">6 meses a 6 años</a>
@@ -49,12 +50,12 @@
                 <li><a href="#por-que-nace">Origen</a></li>
                 <li><a href="#diferencia-na-casa">Una mirada propia</a></li>
                 <li><a href="#por-que-en-casa">El hogar como punto de partida</a></li>
-                <li><a href="#accesos-principales">Encontrad vuestro siguiente paso</a></li>
+                <li hidden><a href="#accesos-principales">Encontrad vuestro siguiente paso</a></li>
                 <li><a href="#como-trabajamos">Un proceso compartido</a></li>
               </ul>
             </nav>
-            <div class="home-actions">
-              <a href="proyecto.html" class="button button--secondary">Conoce el proyecto</a>
+            <div class="home-actions" hidden>
+              <a href="proyecto.html" class="button button--secondary review-hidden-destination">Conoce el proyecto</a>
             </div>
           </div>
         </div>
@@ -153,7 +154,7 @@
       </div>
     </section>
 
-    <section id="accesos-principales" class="section" aria-labelledby="accesos-principales-titulo">
+    <section id="accesos-principales" class="section" aria-labelledby="accesos-principales-titulo" hidden>
       <div class="container">
         <div class="section-heading home-heading">
           <p class="section-label">ENCONTRAD VUESTRO SIGUIENTE PASO</p>
@@ -168,7 +169,7 @@
           <article class="access-card access-card--wellbeing">
             <h3>6 meses a 6 años</h3>
             <p>Diferentes formas de organizar el apoyo según el momento y las necesidades de la familia.</p>
-            <a href="cero-a-seis-meses.html" class="text-link">Descubrir 6 meses a 6 años <span aria-hidden="true">→</span></a>
+            <a href="cero-a-seis-meses.html" class="text-link review-hidden-destination">Descubrir 6 meses a 6 años <span aria-hidden="true">→</span></a>
           </article>
         </div>
       </div>
@@ -231,7 +232,87 @@
         <div class="trust-block__content">
           <!-- TODO: completar bloque profesional con datos validados -->
           <p>Conoce el origen de NA CASA, sus valores y una forma de trabajar basada en la escucha, la cercanía y la realidad de cada hogar.</p>
-          <a href="proyecto.html" class="button button--secondary">Conoce el proyecto</a>
+          <a href="quienes-somos.html" class="button button--primary">Quiénes somos</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section home-experiences-section" aria-labelledby="experiencias-titulo">
+      <div class="container">
+        <div class="experiences-header">
+          <div class="section-heading home-heading">
+            <p class="section-label">EXPERIENCIAS</p>
+            <h2 id="experiencias-titulo">Lo que cuentan otras familias</h2>
+            <p>Cada familia vive el proceso de una manera diferente. Estas experiencias muestran cómo puede sentirse el acompañamiento en el día a día.</p>
+          </div>
+        </div>
+
+        <div class="experiences-carousel" data-experiences-carousel>
+          <div class="experiences-controls" data-experiences-controls role="group" aria-label="Navegación de testimonios">
+            <button class="experiences-control" type="button" data-experiences-previous aria-label="Testimonio anterior" aria-controls="experiences-track">
+              <span aria-hidden="true">←</span>
+            </button>
+            <button class="experiences-control" type="button" data-experiences-next aria-label="Testimonio siguiente" aria-controls="experiences-track">
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+          <!-- TODO: sustituir testimonios de mockup por experiencias reales validadas antes de producción -->
+          <div id="experiences-track" class="experiences-track" data-experiences-track role="list" aria-label="Experiencias de familias" tabindex="0">
+            <article class="experience-card" role="listitem">
+              <blockquote>
+                <span class="experience-card__quote" aria-hidden="true">“</span>
+                <p>Llegamos con muchas dudas y necesitábamos entender cómo trasladar las recomendaciones a nuestra rutina. Poder trabajarlo en casa nos ayudó a verlo todo de una manera mucho más sencilla y cercana.</p>
+                <footer class="experience-card__footer">
+                  <cite>Familia A.</cite>
+                  <span>Primeros meses</span>
+                </footer>
+              </blockquote>
+            </article>
+
+            <article class="experience-card" role="listitem">
+              <blockquote>
+                <span class="experience-card__quote" aria-hidden="true">“</span>
+                <p>Lo que más valoramos fue sentir que no había una solución prefabricada. Primero nos escucharon, observaron cómo era nuestro día a día y a partir de ahí fuimos construyendo pequeños cambios que sí podíamos mantener.</p>
+                <footer class="experience-card__footer">
+                  <cite>Familia B.</cite>
+                  <span>Acompañamiento en el hogar</span>
+                </footer>
+              </blockquote>
+            </article>
+
+            <article class="experience-card" role="listitem">
+              <blockquote>
+                <span class="experience-card__quote" aria-hidden="true">“</span>
+                <p>Las noches se nos estaban haciendo difíciles y necesitábamos ordenar muchas dudas. Tener a alguien que nos acompañase desde nuestra propia realidad nos dio más confianza para afrontar ese momento.</p>
+                <footer class="experience-card__footer">
+                  <cite>Familia C.</cite>
+                  <span>Acompañamiento nocturno</span>
+                </footer>
+              </blockquote>
+            </article>
+
+            <article class="experience-card" role="listitem">
+              <blockquote>
+                <span class="experience-card__quote" aria-hidden="true">“</span>
+                <p>Nos gustó especialmente que las propuestas encajaran con nuestra forma de organizarnos. No sentimos que tuviéramos que cambiar toda nuestra vida, sino ir ajustando cosas concretas poco a poco.</p>
+                <footer class="experience-card__footer">
+                  <cite>Familia D.</cite>
+                  <span>Rutinas familiares</span>
+                </footer>
+              </blockquote>
+            </article>
+
+            <article class="experience-card" role="listitem">
+              <blockquote>
+                <span class="experience-card__quote" aria-hidden="true">“</span>
+                <p>Sentirnos escuchados y poder revisar juntos qué funcionaba y qué no fue muy importante para nosotros. El acompañamiento fue adaptándose a medida que también cambiaban nuestras necesidades.</p>
+                <footer class="experience-card__footer">
+                  <cite>Familia E.</cite>
+                  <span>Proceso de acompañamiento</span>
+                </footer>
+              </blockquote>
+            </article>
+          </div>
         </div>
       </div>
     </section>
