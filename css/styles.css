@@ -2843,19 +2843,23 @@ p {
   border-radius: var(--radius-large);
 }
 
+.about-hero__portraits {
+  display: flex;
+  gap: clamp(4px, 0.8vw, 10px);
+  background: var(--color-background);
+}
+
+.about-hero__portrait {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 .about-hero__media img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.about-hero__media figcaption {
-  position: relative;
-  margin-top: 10px;
-  color: var(--color-sage);
-  font-size: 0.82rem;
-  font-weight: 700;
+  object-position: center;
 }
 
 .about-intro,
@@ -2897,7 +2901,7 @@ p {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(1.25rem, 3vw, 2rem);
-  align-items: stretch;
+  align-items: start;
 }
 
 .about-profile {
