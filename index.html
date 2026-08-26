@@ -22,12 +22,10 @@
         <img src="img/NA CASA LOGO_LOGO POSITIVO.png" alt="NA CASA" class="logo-img">
       </a>
 
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Navegación principal">
         <a href="index.html" class="active" aria-current="page">Inicio</a>
         <a href="quienes-somos.html">Quiénes somos</a>
-        <a href="proyecto.html">Proyecto</a>
         <a href="planes.html">Planes</a>
-        <a href="cero-a-seis-meses.html">6 meses a 6 años</a>
         <a href="contacto.html">Contacto</a>
       </nav>
     </div>
@@ -49,15 +47,12 @@
               <ul class="home-page-index__list">
                 <li><a href="#por-que-nace">Origen</a></li>
                 <li><a href="#diferencia-na-casa">Una mirada propia</a></li>
-                <li><a href="#por-que-en-casa">El hogar como punto de partida</a></li>
+                <li hidden><a href="#por-que-en-casa">El hogar como punto de partida</a></li>
                 <li hidden><a href="#accesos-principales">Encontrad vuestro siguiente paso</a></li>
                 <li><a href="#como-trabajamos">Un proceso compartido</a></li>
                 <li><a href="#experiencias">Experiencias</a></li>
               </ul>
             </nav>
-            <div class="home-actions" hidden>
-              <a href="proyecto.html" class="button button--secondary review-hidden-destination">Conoce el proyecto</a>
-            </div>
           </div>
         </div>
         <figure class="home-hero__visual">
@@ -65,8 +60,8 @@
             class="home-hero__image"
             src="img/hero.jpg"
             alt="Bebé jugando tumbado en casa"
-            width="3960"
-            height="2640"
+            width="1920"
+            height="1280"
             decoding="async"
             fetchpriority="high"
           />
@@ -123,14 +118,22 @@
           <p class="section-label">UNA MIRADA PROPIA</p>
           <h2 id="diferencia-na-casa-titulo">¿Qué hace diferente a NA CASA?</h2>
           <p class="home-intro">No llevamos un plan a vuestra casa. Lo construimos con vosotros, desde vuestra realidad.</p>
-          <p>
-            El equipo de “Na Casa“ se acerca al lugar donde transcurre la vida familiar. 
-            Allí podemos comprender mejor las rutinas, los espacios, los tiempos y las relaciones, y descubrir qué oportunidades ya existen.
-          </p>
-          <p>
-            No buscamos añadir más tareas ni transformar el hogar en un espacio terapéutico. 
-            Partimos de lo que ya hacéis para construir juntos pequeños cambios que puedan integrarse de forma natural en vuestro día a día.
-          </p>
+        </div>
+        <div class="home-editorial home-difference-editorial">
+          <div class="home-editorial__content">
+            <p>
+              El equipo de NA CASA se acerca al lugar donde transcurre la vida familiar.
+              Allí podemos comprender mejor las rutinas, los espacios, los tiempos y las relaciones, y descubrir qué oportunidades ya existen.
+            </p>
+            <p>
+              No buscamos añadir más tareas ni transformar el hogar en un espacio terapéutico.
+              Partimos de lo que ya hacéis para construir juntos pequeños cambios que puedan integrarse de forma natural en vuestro día a día.
+            </p>
+          </div>
+          <aside class="home-editorial__note" aria-label="Idea principal">
+            <span aria-hidden="true">“</span>
+            <p>No partimos de un plan cerrado. Lo construimos con la familia desde su realidad.</p>
+          </aside>
         </div>
         <div class="difference-grid">
           <article class="card card--blue difference-card">
@@ -153,7 +156,7 @@
       </div>
     </section>
 
-    <section id="por-que-en-casa" class="section section--wellbeing" aria-labelledby="por-que-en-casa-titulo">
+    <section id="por-que-en-casa" class="section section--wellbeing" aria-labelledby="por-que-en-casa-titulo" hidden>
       <div class="container home-editorial">
         <div class="home-editorial__content">
           <p class="section-label">EL HOGAR COMO PUNTO DE PARTIDA</p>
@@ -189,7 +192,6 @@
           <article class="access-card access-card--wellbeing">
             <h3>6 meses a 6 años</h3>
             <p>Diferentes formas de organizar el apoyo según el momento y las necesidades de la familia.</p>
-            <a href="cero-a-seis-meses.html" class="text-link review-hidden-destination">Descubrir 6 meses a 6 años <span aria-hidden="true">→</span></a>
           </article>
         </div>
       </div>
@@ -217,7 +219,7 @@
               <span class="process-step__number">2</span>
               <div class="process-step__content">
                 <div class="process-step__heading"><h3>Observamos y comprendemos</h3><svg class="process-step__icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="27" cy="27" r="17"></circle><path d="M39 39l14 14M15 27s5-8 12-8 12 8 12 8-5 8-12 8-12-8-12-8z"></path><circle cx="27" cy="27" r="4"></circle></svg></div>
-                <p>Buscamos propuestas sencillas y realistas que encajen de forma natural en el día a día.</p>
+                <p>Observamos las rutinas, el entorno y lo que ocurre en el día a día para comprender la situación antes de plantear cambios.</p>
               </div>
             </div>
           </li>
@@ -276,15 +278,14 @@
               <span aria-hidden="true">→</span>
             </button>
           </div>
-          <!-- TODO: sustituir testimonios de mockup por experiencias reales validadas antes de producción -->
           <div id="experiences-track" class="experiences-track" data-experiences-track role="list" aria-label="Experiencias de familias" tabindex="0">
             <article class="experience-card" role="listitem">
               <blockquote>
                 <span class="experience-card__quote" aria-hidden="true">“</span>
-                <p>Llegamos con muchas dudas y necesitábamos entender cómo trasladar las recomendaciones a nuestra rutina. Poder trabajarlo en casa nos ayudó a verlo todo de una manera mucho más sencilla y cercana.</p>
+                <p>Al principio nos costaba la idea de que viniesen a nuestra casa, pero lo hicieron con tanto cariño y respeto que ahora sabemos que fue la mejor decisión.</p>
+                <p>A Hugo le costaba la rutina del baño, la cena y dormir y, gracias a NA CASA, ahora es uno de los momentos que más disfrutamos en familia.</p>
                 <footer class="experience-card__footer">
-                  <cite>Familia A.</cite>
-                  <span>Primeros meses</span>
+                  <cite>Papás de Hugo · 27 meses</cite>
                 </footer>
               </blockquote>
             </article>
@@ -292,10 +293,10 @@
             <article class="experience-card" role="listitem">
               <blockquote>
                 <span class="experience-card__quote" aria-hidden="true">“</span>
-                <p>Lo que más valoramos fue sentir que no había una solución prefabricada. Primero nos escucharon, observaron cómo era nuestro día a día y a partir de ahí fuimos construyendo pequeños cambios que sí podíamos mantener.</p>
+                <p>Llegar a casa fue un poco una locura, ya que Rubén tiene una hermana mayor de 4 añitos. Nos ayudaron a organizarnos, a gestionar el día a día y a conseguir que cada momento no fuera un estrés.</p>
+                <p>Aunque al principio acudimos por Rubén, nos ayudaron muchísimo también con Ana. Gracias a Marta y José por contar con nuestra opinión en todo momento.</p>
                 <footer class="experience-card__footer">
-                  <cite>Familia B.</cite>
-                  <span>Acompañamiento en el hogar</span>
+                  <cite>Mamá y papá de Rubén · 3 meses</cite>
                 </footer>
               </blockquote>
             </article>
@@ -303,10 +304,11 @@
             <article class="experience-card" role="listitem">
               <blockquote>
                 <span class="experience-card__quote" aria-hidden="true">“</span>
-                <p>Las noches se nos estaban haciendo difíciles y necesitábamos ordenar muchas dudas. Tener a alguien que nos acompañase desde nuestra propia realidad nos dio más confianza para afrontar ese momento.</p>
+                <p>Darle de comer a Sara era una locura. Rechazaba la comida entera y solo quería purés y yogures. Tenerlos a nuestro lado en esos momentos nos facilitó el cambio y nos ayudó a ver la situación como algo normal.</p>
+                <p>Poco a poco, Sara va disfrutando de la comida de “mayores” y sentarnos los tres a comer es muy agradable.</p>
+                <p>Muchas gracias a Marta y José.</p>
                 <footer class="experience-card__footer">
-                  <cite>Familia C.</cite>
-                  <span>Acompañamiento nocturno</span>
+                  <cite>Mamá y papá de Sara · 15 meses</cite>
                 </footer>
               </blockquote>
             </article>
@@ -314,10 +316,11 @@
             <article class="experience-card" role="listitem">
               <blockquote>
                 <span class="experience-card__quote" aria-hidden="true">“</span>
-                <p>Nos gustó especialmente que las propuestas encajaran con nuestra forma de organizarnos. No sentimos que tuviéramos que cambiar toda nuestra vida, sino ir ajustando cosas concretas poco a poco.</p>
+                <p>Salir a pasear era una auténtica locura: que si la silla, la moto… para al final acabar en brazos, cuando no salía corriendo.</p>
+                <p>Tener a Marta en esos paseos nos ayudó a entender lo que pasaba y a aprender a disfrutar de esos momentos. Nos dio seguridad y herramientas para poder gestionar sus enfados.</p>
+                <p>Con paciencia y cariño lo hemos conseguido. Gracias a NA CASA.</p>
                 <footer class="experience-card__footer">
-                  <cite>Familia D.</cite>
-                  <span>Rutinas familiares</span>
+                  <cite>Mamás de Iker · 38 meses</cite>
                 </footer>
               </blockquote>
             </article>
@@ -325,10 +328,22 @@
             <article class="experience-card" role="listitem">
               <blockquote>
                 <span class="experience-card__quote" aria-hidden="true">“</span>
-                <p>Sentirnos escuchados y poder revisar juntos qué funcionaba y qué no fue muy importante para nosotros. El acompañamiento fue adaptándose a medida que también cambiaban nuestras necesidades.</p>
+                <p>El día a día era un poco loco, con nuestras hijas corriendo todo el día de un lado a otro. Tener rutinas era algo impensable. Pero con su acompañamiento, ¡lo hemos conseguido!</p>
+                <p>Gracias por todo. Por estar ahí con tanto cariño hacia nuestro día a día como familia. Realmente nos habéis hecho sentir especiales.</p>
+                <p>José y Marta, sin duda estaremos en contacto.</p>
                 <footer class="experience-card__footer">
-                  <cite>Familia E.</cite>
-                  <span>Proceso de acompañamiento</span>
+                  <cite>Familia de Leire y Paula · 18 meses</cite>
+                </footer>
+              </blockquote>
+            </article>
+
+            <article class="experience-card" role="listitem">
+              <blockquote>
+                <span class="experience-card__quote" aria-hidden="true">“</span>
+                <p>Estamos muy contentos. Nuestro hijo de 5 años tenía una rabieta cada vez que íbamos al súper y quería algo. Con Marta supimos controlar esas rabietas.</p>
+                <p>Súper agradecidos con el método y, sobre todo, con la paciencia de Marta.</p>
+                <footer class="experience-card__footer">
+                  <cite>Papás de Óscar · 5 años</cite>
                 </footer>
               </blockquote>
             </article>
@@ -345,7 +360,6 @@
         <p>Contadnos qué estáis viviendo y valoraremos juntos cómo puede acompañaros NA CASA.</p>
         <div class="home-actions">
           <a href="contacto.html" class="button button--light">Contactar</a>
-          <!-- TODO: confirmar número oficial de WhatsApp -->
           <a href="https://wa.me/34686826958?text=Hola%2C%20he%20visto%20la%20web%20de%20NA%20CASA%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n."
              class="button button--outline-light" target="_blank" rel="noopener noreferrer">
             <svg class="button-whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
@@ -365,7 +379,6 @@
     </div>
   </footer>
 
-  <!-- TODO: confirmar número oficial de WhatsApp -->
   <a class="whatsapp-float"
      href="https://wa.me/34686826958?text=Hola%2C%20he%20visto%20la%20web%20de%20NA%20CASA%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n."
      target="_blank"

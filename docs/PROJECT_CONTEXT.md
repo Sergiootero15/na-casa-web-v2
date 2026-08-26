@@ -41,16 +41,14 @@ La cabecera, la navegación, el pie y el acceso flotante a WhatsApp están repet
 |---|---|
 | `index.html` | Inicio: propuesta de valor, origen, diferenciación, proceso, experiencias y CTA. |
 | `quienes-somos.html` | Presentación del equipo, perfiles y enfoque profesional compartido. |
-| `proyecto.html` | Origen, principios, metodología, identidad y presentación general del proyecto. |
 | `planes.html` | Catálogo de planes, modalidades, contenido incluido y tarifas. |
 | `plan-bienvenida-diurno.html` | Detalle del Plan Bienvenida Diurno. |
 | `plan-bienvenida-nocturno.html` | Detalle del Plan Bienvenida Nocturno. |
 | `plan-creciendo-diurno.html` | Detalle del Plan Creciendo Diurno. |
 | `plan-creciendo-nocturno.html` | Detalle del Plan Creciendo Nocturno. |
-| `cero-a-seis-meses.html` | Página de acompañamiento presentada actualmente como “6 meses a 6 años”. |
 | `contacto.html` | Información de contacto, formulario y acceso a WhatsApp. |
 
-En este documento, “activa” significa que la página existe en la raíz y carga los recursos compartidos. No implica que esté visible actualmente en la navegación principal.
+`proyecto.html` y `cero-a-seis-meses.html` se han retirado definitivamente y no forman parte de la V1.
 
 ## Navegación y flujos
 
@@ -60,12 +58,8 @@ Todas las páginas contienen enlaces a:
 
 - Inicio.
 - Quiénes somos.
-- Proyecto.
 - Planes.
-- 6 meses a 6 años.
 - Contacto.
-
-`css/styles.css` oculta actualmente los enlaces de Proyecto y “6 meses a 6 años”. El HTML y sus estados activos se conservan.
 
 Las páginas de detalle de planes mantienen Planes como ubicación activa mediante `aria-current="location"` y ofrecen un enlace de regreso a `planes.html#planes-disponibles`.
 
@@ -89,7 +83,7 @@ Algunas secciones y enlaces permanecen en el código con `hidden`. No forman par
 - Cuatro planes agrupados por etapa y modalidad diurna/nocturna.
 - Horarios, objetivos, contenido incluido y precios.
 - Servicios y bloques editoriales adicionales conservados ocultos.
-- Carrusel de cinco experiencias en Inicio.
+- Carrusel de seis experiencias reales en Inicio.
 - Formulario de contacto.
 - CTA y acceso flotante a WhatsApp.
 
@@ -108,13 +102,11 @@ El contenido principal, la navegación y los enlaces siguen disponibles sin Java
 
 Los siguientes estados están documentados directamente mediante comentarios, atributos o contenido visible:
 
-- Parte de la navegación y varias secciones están ocultas temporalmente.
-- Las experiencias de Inicio están marcadas como contenido de mockup pendiente de validación.
-- Los perfiles, nombres, trayectoria y fotografía del equipo contienen marcadores de validación.
-- `img/equipo-na-casa-placeholder.svg` es un recurso provisional.
+- Varias secciones editoriales están ocultas temporalmente.
+- Las seis experiencias de Inicio están confirmadas para la V1.
+- Los perfiles, nombres, trayectoria y fotografías del equipo están confirmados para la V1.
 - Parte del posicionamiento profesional y de la información comercial está pendiente de confirmar.
-- Algunas páginas contienen un número concreto de WhatsApp y otras conservan `34XXXXXXXXX`; el dato oficial no puede deducirse con certeza.
-- `cero-a-seis-meses.html` mantiene diferencias entre su nombre, metadescripción y presentación visible.
+- El número oficial de WhatsApp es `+34 686 826 958` (`34686826958` en los enlaces `wa.me`).
 - `CONTENT-MAP.md` refleja un mapa editorial parcial anterior y no describe por completo la estructura actual.
 - `deprecated/` conserva seis documentos históricos con una navegación ya sustituida.
 
@@ -125,7 +117,6 @@ Estos puntos describen el estado observado. No constituyen autorización para co
 - `img/hero.jpg`: imagen principal de Inicio.
 - `img/NA CASA LOGO_LOGO POSITIVO.png`: cabecera, favicon e identidad visual.
 - `img/NA CASA LOGO_LOGO NEGATIVO.png`: recurso disponible sin uso observado en las páginas activas.
-- `img/equipo-na-casa-placeholder.svg`: imagen provisional de Quiénes somos.
 - Las capturas PNG de `img/` no tienen uso observado en las páginas activas.
 - `references/`: documentos Word y PDF de apoyo editorial, ignorados por Git.
 - `outputs/`: resultados auxiliares, ignorados por Git.
@@ -143,8 +134,7 @@ Estos puntos describen el estado observado. No constituyen autorización para co
 
 - Rama, configuración y mecanismo exacto utilizado para publicar en GitHub Pages.
 - Tratamiento real del formulario en el entorno desplegado.
-- Número oficial y texto definitivo de WhatsApp.
-- Perfiles, fotografía y testimonios autorizados para publicación.
+- Texto definitivo de WhatsApp.
 - Ámbito geográfico, desplazamientos y condiciones comerciales pendientes.
 - Responsable de validar y aprobar el contenido editorial.
 - Navegadores y dispositivos que forman la matriz oficial de soporte.

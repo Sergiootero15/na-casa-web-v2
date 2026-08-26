@@ -7,7 +7,6 @@ La implementación completa reside en `css/styles.css`. Este documento resume pa
 Referencias representativas:
 
 - `index.html`: hero, tarjetas, proceso, carrusel y CTA.
-- `proyecto.html`: composición editorial y geometría de marca.
 - `quienes-somos.html`: perfiles y layouts de equipo.
 - `planes.html`: catálogo, tarifas y familias de planes.
 - `plan-bienvenida-diurno.html`: estructura de detalle de plan.
@@ -28,7 +27,7 @@ Referencias representativas:
 | `--color-primary-hover` | `#245d86` | Estado hover principal. |
 | `--color-primary-deep` | `#173b57` | Titulares, fondos profundos y texto destacado. |
 | `--color-sage` | `#527d72` | Acentos de modalidad y bienestar. |
-| `--color-sage-soft` | `#79a79a` | Decoración y texto sobre fondos profundos. |
+| `--color-sage-soft` | `#79a79a` | Decoración y superficies suaves. |
 | `--color-human` | `#c98267` | Acento humano y geometría decorativa. |
 | `--color-text` | `#24343d` | Texto general. |
 | `--color-text-heading` | `#173b57` | Encabezados y texto enfatizado. |
@@ -107,7 +106,6 @@ Existen una base compartida y varias familias especializadas:
 - `.plan-card`: catálogo de planes.
 - `.experience-card`: testimonios en carrusel.
 - `.about-profile`: perfiles del equipo.
-- `.project-principle`: principios del proyecto.
 
 Las variantes azules y verdes refuerzan agrupaciones o modalidades. Debe reutilizarse la familia correspondiente antes de crear una tarjeta nueva.
 

@@ -59,7 +59,7 @@ Cada área principal y cada detalle de plan dispone de su propio documento HTML.
 **Evidencia en el repositorio:**
 
 - Cabecera repetida en los HTML activos.
-- Enlaces entre `index.html`, `quienes-somos.html`, `proyecto.html`, `planes.html`, `cero-a-seis-meses.html` y `contacto.html`.
+- Enlaces entre `index.html`, `quienes-somos.html`, `planes.html` y `contacto.html`; las páginas `proyecto.html` y `cero-a-seis-meses.html` se retiraron definitivamente de la V1.
 - Enlaces desde `planes.html` a los cuatro documentos `plan-*.html`.
 - Regreso desde cada detalle a `planes.html#planes-disponibles`.
 
@@ -118,9 +118,7 @@ Determinados enlaces y secciones permanecen en el código, pero están fuera de 
 **Evidencia en el repositorio:**
 
 - Regla global `[hidden]` en `css/styles.css`.
-- Comentario “Revisión temporal” asociado a enlaces ocultos de la navegación.
 - Secciones con `hidden` en `index.html` y `planes.html`.
-- Clases `review-hidden-destination`.
 
 **Consecuencia práctica:**
 El contenido oculto no debe eliminarse, publicarse ni utilizarse como patrón general sin una petición editorial explícita. Las modificaciones cercanas deben preservar su estado de visibilidad.
