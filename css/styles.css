@@ -757,6 +757,38 @@ p {
   justify-self: start;
 }
 
+.contact-form__honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.contact-form__status {
+  margin: 0;
+  color: var(--color-text-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.contact-form__status:empty {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+.contact-form__status[data-state="success"] {
+  color: var(--color-sage);
+}
+
+.contact-form__status[data-state="error"] {
+  color: var(--color-primary-deep);
+}
+
 .form-error {
   color: var(--color-primary-deep);
   font-size: 0.9rem;

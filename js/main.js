@@ -73,3 +73,92 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateControls();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("[data-contact-form]");
+
+  if (!form) {
+    return;
+  }
+
+  const submitButton = form.querySelector('button[type="submit"]');
+  const status = form.querySelector(".contact-form__status");
+
+  if (!submitButton || !status) {
+    return;
+  }
+
+  const successMessage =
+    "Gracias por escribirnos. Hemos recibido vuestro mensaje y nos pondremos en contacto con vosotros lo antes posible.";
+  const errorMessage =
+    "No hemos podido enviar el mensaje. Inténtalo de nuevo dentro de unos minutos.";
+  const networkErrorMessage =
+    "No hemos podido conectar con el servicio de envío. Comprueba tu conexión e inténtalo de nuevo.";
+  const rateLimitMessage =
+    "Se han realizado demasiados intentos. Espera unos minutos antes de volver a enviarlo.";
+  const originalButtonText = submitButton.textContent;
+  let isSubmitting = false;
+
+  const showStatus = (message, state) => {
+    status.textContent = message;
+    status.dataset.state = state;
+  };
+
+  const getResponseError = async (response) => {
+    if (response.status === 429) {
+      return rateLimitMessage;
+    }
+
+    const data = await response.json().catch(() => null);
+    const responseErrors = Array.isArray(data?.errors) ? data.errors : [];
+    const details = responseErrors
+      .map((error) => error?.message)
+      .filter((message) => typeof message === "string" && message.trim())
+      .join(" ");
+
+    return details ? `${errorMessage} ${details}` : errorMessage;
+  };
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    if (isSubmitting) {
+      return;
+    }
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    isSubmitting = true;
+    submitButton.disabled = true;
+    submitButton.textContent = "Enviando…";
+    status.textContent = "";
+    delete status.dataset.state;
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        showStatus(await getResponseError(response), "error");
+        return;
+      }
+
+      form.reset();
+      showStatus(successMessage, "success");
+    } catch {
+      showStatus(networkErrorMessage, "error");
+    } finally {
+      isSubmitting = false;
+      submitButton.disabled = false;
+      submitButton.textContent = originalButtonText;
+    }
+  });
+});

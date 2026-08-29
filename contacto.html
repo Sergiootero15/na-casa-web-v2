@@ -50,24 +50,31 @@
                         </div>
                     </div>
 
-                    <form class="contact-form card" action="#" method="post">
+                    <form class="contact-form card" action="https://formspree.io/f/mgaevwje" method="POST"
+                        data-contact-form>
                         <label>
                             Nombre
-                            <input type="text" name="name" placeholder="Nombre" autocomplete="name">
+                            <input type="text" name="name" placeholder="Nombre" autocomplete="name" required>
                         </label>
 
                         <label>
                             Email
-                            <input type="email" name="email" placeholder="correo@ejemplo.com" autocomplete="email">
+                            <input type="email" name="email" placeholder="correo@ejemplo.com" autocomplete="email" required>
                         </label>
 
                         <label>
                             Mensaje
                             <textarea name="message" rows="6"
-                                placeholder="Contadnos brevemente qué necesitáis"></textarea>
+                                placeholder="Contadnos brevemente qué necesitáis" required></textarea>
                         </label>
 
+                        <div class="contact-form__honeypot" aria-hidden="true">
+                            <label for="contact-website">No rellenar este campo</label>
+                            <input id="contact-website" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+                        </div>
+
                         <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                        <p class="contact-form__status" role="status" aria-live="polite" aria-atomic="true"></p>
                     </form>
                 </div>
             </div>
