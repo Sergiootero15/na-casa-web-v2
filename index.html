@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NA CASA - Crianza acompañada</title>
+  <title>Inicio | NA CASA</title>
   <meta
     name="description"
-    content="Proyecto NA CASA. Acompañamiento profesional a familias con niños de 0 a 6 años, centrado en la vida diaria del hogar."
+    content="NA CASA ofrece acompañamiento profesional para familias, adaptado a las rutinas, necesidades y realidad de cada hogar."
   />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="img/NA CASA LOGO_LOGO POSITIVO.png" />
 </head>
 <body>
+
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
 
   <!-- HEADER / MENÚ -->
   <header class="site-header">
@@ -19,62 +22,375 @@
         <img src="img/NA CASA LOGO_LOGO POSITIVO.png" alt="NA CASA" class="logo-img">
       </a>
 
-      <nav class="main-nav">
-        <a href="index.html" class="active">Inicio</a>
-        <a href="proyecto.html">Proyecto</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="tarifas.html">Tarifas</a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="index.html" class="active" aria-current="page">Inicio</a>
+        <a href="quienes-somos.html">Quiénes somos</a>
+        <a href="planes.html">Planes</a>
         <a href="contacto.html">Contacto</a>
-        <!-- <a href="necesidad.html">Necesidad</a> -->
-        <!-- <a href="fundamento.html">Fundamento</a> -->
-        <!-- <a href="objetivos.html">Objetivos</a> -->
-        <!-- <a href="areas.html">Áreas</a> -->
-        <!-- <a href="metodologia.html">Metodología</a> -->
-        <!-- <a href="colaboracion.html">Colaboración</a> -->
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
 
-    <!-- HERO -->
-    <section id="inicio" class="hero">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <p class="section-label">PROYECTO NA CASA</p>
-        <h1>Crianza acompañada</h1>
-        <p class="hero-subtitle">
-          Acompañamiento profesional a familias con niños de 0 a 6 años,
-          centrado en la vida diaria del hogar.
-        </p>
-        <p class="hero-text">
-          Apoyo cercano, práctico y basado en la evidencia para mejorar el bienestar
-          familiar y favorecer el desarrollo infantil desde los entornos naturales.
-        </p>
+    <section id="inicio" class="home-hero">
+      <div class="container home-hero__layout">
+        <div class="home-hero__content">
+          <p class="section-label">NA CASA</p>
+          <h1>Crecer empieza en casa</h1>
+          <p class="home-hero__lead">
+            Un modelo de acompañamiento a las familias para vivir la crianza con confianza y favorecer el desarrollo infantil en contextos naturales.
+          </p>
+          <div class="home-index-layout">
+            <nav class="home-page-index" aria-label="En esta página">
+              <p class="home-page-index__label">EN ESTA PÁGINA</p>
+              <ul class="home-page-index__list">
+                <li><a href="#por-que-nace">Origen</a></li>
+                <li><a href="#diferencia-na-casa">Una mirada propia</a></li>
+                <li hidden><a href="#por-que-en-casa">El hogar como punto de partida</a></li>
+                <li hidden><a href="#accesos-principales">Encontrad vuestro siguiente paso</a></li>
+                <li><a href="#como-trabajamos">Un proceso compartido</a></li>
+                <li><a href="#experiencias">Experiencias</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <figure class="home-hero__visual">
+          <img
+            class="home-hero__image"
+            src="img/hero.jpg"
+            alt="Bebé jugando tumbado en casa"
+            width="1920"
+            height="1280"
+            decoding="async"
+            fetchpriority="high"
+          />
+          <span class="home-shape home-shape--primary" aria-hidden="true"></span>
+          <span class="home-shape home-shape--square" aria-hidden="true"></span>
+          <span class="home-shape home-shape--circle" aria-hidden="true"></span>
+        </figure>
+      </div>
+    </section>
 
-        <div class="hero-buttons">
-          <a href="proyecto.html" class="btn btn-primary">Conoce el proyecto</a>
-          <a href="metodologia.html" class="btn btn-secondary">Cómo trabajamos</a>
+    <section id="por-que-nace" class="section section--alternate" aria-labelledby="por-que-nace-titulo">
+      <div class="container">
+        <div class="section-heading home-heading">
+          <p class="section-label">EL ORIGEN</p>
+          <h2 id="por-que-nace-titulo">Nuestro punto de partida</h2>
+          <p class="home-intro">
+            Acompañar desde lo que cada familia es, vive y necesita.
+          </p>
+          <p class="home-intro">
+            NA CASA nace para acompañar a las familias en las decisiones y retos de la crianza, entendiendo que no existen recetas universales. Cada familia es diferente y, por eso, buscamos juntos respuestas que respeten su realidad y puedan integrarse de forma natural en su día a día.
+          </p>
+        </div>
+        <div class="insight-grid">
+          <article class="insight-item">
+            <span class="insight-item__mark insight-item__mark--triangle" aria-hidden="true"></span>
+            <h3>Demasiada información</h3>
+            <p>
+              Nunca hemos tenido tanta información sobre crianza y desarrollo, pero tantos consejos, métodos y opiniones pueden generar más dudas que respuestas. 
+              Acompañamos para encontrar lo que realmente tiene sentido para cada familia.
+            </p>
+          </article>
+          <article class="insight-item">
+            <span class="insight-item__mark insight-item__mark--diamond" aria-hidden="true"></span>
+            <h3>Cada familia es diferente</h3>
+            <p>
+              Y tiene su historia, sus valores y su forma de criar. Por eso, primero escuchamos y comprendemos, y después buscamos juntos qué puede ayudar.
+            </p>
+          </article>
+          <article class="insight-item">
+            <span class="insight-item__mark insight-item__mark--circle" aria-hidden="true"></span>
+            <h3>Las rutinas reales importan</h3>
+            <p>
+              No necesitamos llenar la vida familiar de nuevas actividades, el comer, vestirse, jugar, bañarse, salir a pasear o recoger forman parte del día a día y, al mismo tiempo, ofrecen oportunidades para comunicarse, participar, aprender y ganar autonomía. 
+              Se trata de descubrir esas oportunidades y aprovecharlas de forma natural.
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- CIERRE -->
-    <section id="cierre" class="section final-cta">
+    <section id="diferencia-na-casa" class="section" aria-labelledby="diferencia-na-casa-titulo">
       <div class="container">
-        <div class="section-heading center">
-          <p class="section-label"></p>
-          <h2>Una crianza acompañada, práctica y real</h2>
+        <div class="section-heading home-heading home-difference-heading">
+          <p class="section-label">UNA MIRADA PROPIA</p>
+          <h2 id="diferencia-na-casa-titulo">¿Qué hace diferente a NA CASA?</h2>
+          <p class="home-intro">No llevamos un plan a vuestra casa. Lo construimos con vosotros, desde vuestra realidad.</p>
+        </div>
+        <div class="home-editorial home-difference-editorial">
+          <div class="home-editorial__content">
+            <p>
+              El equipo de NA CASA se acerca al lugar donde transcurre la vida familiar.
+              Allí podemos comprender mejor las rutinas, los espacios, los tiempos y las relaciones, y descubrir qué oportunidades ya existen.
+            </p>
+            <p>
+              No buscamos añadir más tareas ni transformar el hogar en un espacio terapéutico.
+              Partimos de lo que ya hacéis para construir juntos pequeños cambios que puedan integrarse de forma natural en vuestro día a día.
+            </p>
+          </div>
+          <aside class="home-editorial__note" aria-label="Idea principal">
+            <span aria-hidden="true">“</span>
+            <p>No partimos de un plan cerrado. Lo construimos con la familia desde su realidad.</p>
+          </aside>
+        </div>
+        <div class="difference-grid">
+          <article class="card card--blue difference-card">
+            <h3>En vuestra realidad</h3>
+            <p>Nos acercamos al entorno donde ocurren las rutinas, aparecen las dudas y transcurre vuestra vida familiar.</p>
+          </article>
+          <article class="card card--wellbeing difference-card">
+            <h3>Construimos juntos</h3>
+            <p>La familia conoce mejor que nadie su realidad. Escuchamos, observamos y buscamos juntos qué puede ayudar.</p>
+          </article>
+          <article class="card difference-card">
+            <h3>Propuestas que encajan</h3>
+            <p>No hay recetas universales. Las propuestas se adaptan a vuestros tiempos, necesidades, recursos y forma de criar.</p>
+          </article>
+          <article class="card card--blue difference-card">
+            <h3>Cambios que permanecen</h3>
+            <p>Buscamos pequeños ajustes que puedan incorporarse al día a día y mantenerse sin depender continuamente de los profesionales.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="por-que-en-casa" class="section section--wellbeing" aria-labelledby="por-que-en-casa-titulo" hidden>
+      <div class="container home-editorial">
+        <div class="home-editorial__content">
+          <p class="section-label">EL HOGAR COMO PUNTO DE PARTIDA</p>
+          <h2 id="por-que-en-casa-titulo">El hogar no es solo el lugar: es parte del proceso</h2>
           <p>
-            NA CASA propone una forma de acompañar a las familias desde su realidad
-            cotidiana, con estrategias funcionales, apoyo cercano y una mirada respetuosa
-            y basada en la evidencia.
+            En casa se entienden mejor los espacios, los tiempos y las relaciones que forman
+            parte de cada rutina. Ver ese contexto ayuda a plantear cambios posibles y respetuosos.
           </p>
-          <div class="quote-box">
-            <p>“No te damos un plan, lo construimos contigo en tu casa.”</p>
-          <!-- </div>
-          <a href="index.html" class="btn btn-primary">Volver al inicio</a>
-        </div> -->
+          <p>
+            Así, las estrategias pueden integrarse en el día a día y apoyarse en los recursos
+            que la familia ya tiene.
+          </p>
+        </div>
+        <aside class="home-editorial__note" aria-label="Idea principal">
+          <span aria-hidden="true">“</span>
+          <p>No partimos de un plan cerrado. Lo construimos con la familia desde su realidad.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="accesos-principales" class="section" aria-labelledby="accesos-principales-titulo" hidden>
+      <div class="container">
+        <div class="section-heading home-heading">
+          <p class="section-label">ENCONTRAD VUESTRO SIGUIENTE PASO</p>
+          <h2 id="accesos-principales-titulo">Explora NA CASA</h2>
+        </div>
+        <div class="access-grid">
+          <article class="access-card access-card--blue">
+            <h3>0 a 6 meses</h3>
+            <p>Un espacio específico para acompañar a las familias durante los primeros meses.</p>
+            <a href="planes.html" class="text-link">Ver planes <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="access-card access-card--wellbeing">
+            <h3>6 meses a 6 años</h3>
+            <p>Diferentes formas de organizar el apoyo según el momento y las necesidades de la familia.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-trabajamos" class="section section--alternate home-process-section" aria-labelledby="como-trabajamos-titulo">
+      <div class="container">
+        <div class="section-heading home-heading">
+          <p class="section-label">UN PROCESO COMPARTIDO</p>
+          <h2 id="como-trabajamos-titulo">Cómo trabajamos</h2>
+          <p>Antes de proponer, necesitamos escuchar, observar y comprender.</p>
+        </div>
+        <ol class="process-timeline">
+          <li class="process-step">
+            <div class="process-step__body">
+              <span class="process-step__number">1</span>
+              <div class="process-step__content">
+                <div class="process-step__heading"><h3>Nos conocemos</h3><svg class="process-step__icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="20" cy="19" r="7"></circle><circle cx="44" cy="19" r="7"></circle><path d="M8 50v-7c0-8 5-13 12-13s12 5 12 13v7M32 50v-7c0-8 5-13 12-13s12 5 12 13v7"></path><path d="M24 38l8 6 8-6"></path></svg></div>
+                <p>Partimos de lo que os preocupa, de vuestras prioridades y del momento que estáis viviendo.</p>
+              </div>
+            </div>
+          </li>
+          <li class="process-step">
+            <div class="process-step__body">
+              <span class="process-step__number">2</span>
+              <div class="process-step__content">
+                <div class="process-step__heading"><h3>Observamos y comprendemos</h3><svg class="process-step__icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="27" cy="27" r="17"></circle><path d="M39 39l14 14M15 27s5-8 12-8 12 8 12 8-5 8-12 8-12-8-12-8z"></path><circle cx="27" cy="27" r="4"></circle></svg></div>
+                <p>Observamos las rutinas, el entorno y lo que ocurre en el día a día para comprender la situación antes de plantear cambios.</p>
+              </div>
+            </div>
+          </li>
+          <li class="process-step">
+            <div class="process-step__body">
+              <span class="process-step__number">3</span>
+              <div class="process-step__content">
+                <div class="process-step__heading"><h3>Construimos juntos</h3><svg class="process-step__icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect x="13" y="9" width="38" height="46" rx="3"></rect><path d="M23 9V6h18v3M22 24h20M22 34h14M22 44h10M43 37l8-8 5 5-8 8-7 2z"></path></svg></div>
+                <p>Buscamos propuestas sencillas y realistas que encajen de forma natural en el día a día.</p>
+              </div>
+            </div>
+          </li>
+          <li class="process-step">
+            <div class="process-step__body">
+              <span class="process-step__number">4</span>
+              <div class="process-step__content">
+                <div class="process-step__heading"><h3>Acompañamos y ajustamos</h3><svg class="process-step__icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M32 52S12 41 12 25c0-7 5-12 12-12 4 0 7 2 8 5 2-3 5-5 9-5 7 0 12 5 12 12 0 16-21 27-21 27z"></path><path d="M5 39h11l7 7M59 39H48l-7 7"></path></svg></div>
+                <p>Revisamos qué funciona, qué necesita cambiar y avanzamos juntos durante el proceso.</p>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--compact home-trust-section" aria-labelledby="confianza-proyecto">
+      <div class="container trust-block">
+        <div>
+          <p class="section-label">CONFIANZA Y CERCANÍA</p>
+          <h2 id="confianza-proyecto">Un proyecto pensado para las familias</h2>
+        </div>
+        <div class="trust-block__content">
+          <!-- TODO: completar bloque profesional con datos validados -->
+          <p>Conoce a las personas detrás de NA CASA y la mirada compartida desde la que nace nuestra forma de acompañar.</p>
+          <a href="quienes-somos.html" class="button button--primary">Quiénes somos</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencias" class="section home-experiences-section" aria-labelledby="experiencias-titulo">
+      <div class="container">
+        <div class="experiences-header">
+          <div class="section-heading home-heading">
+            <p class="section-label">EXPERIENCIAS</p>
+            <h2 id="experiencias-titulo">Lo que cuentan las familias</h2>
+            <p>Palabras de familias que han confiado en Marta a lo largo de su trayectoria profesional.</p>
+          </div>
+        </div>
+
+        <div class="experiences-carousel" data-experiences-carousel>
+          <div class="experiences-controls" data-experiences-controls role="group" aria-label="Navegación de testimonios">
+            <button class="experiences-control" type="button" data-experiences-previous aria-label="Testimonio anterior" aria-controls="experiences-track">
+              <span aria-hidden="true">←</span>
+            </button>
+            <button class="experiences-control" type="button" data-experiences-next aria-label="Testimonio siguiente" aria-controls="experiences-track">
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+          <div id="experiences-track" class="experiences-track" data-experiences-track role="list" aria-label="Experiencias de familias" tabindex="0">
+            <article class="experience-card" role="listitem">
+              <blockquote>
+                <span class="experience-card__quote" aria-hidden="true">“</span>
+                <p>No hay palabras suficientes para agradecer todo lo que Marta ha hecho por nuestra hija. Cuando tuvimos que dejarla con 7 meses teníamos muchas dudas y miedos, porque era un bebé y porque éramos primerizos.</p>
+                <p>Nuestra hija creció con Marta rodeada de paciencia, besos, respeto y cuidados. Supo ver muy pronto sus capacidades y acompañarlas en cada momento. Nos ha dado la mayor tranquilidad del mundo como padres.</p>
+                <p>Es una profesional excepcional y una persona con un corazón gigantesco.</p>
+                <footer class="experience-card__footer">
+                  <cite>Andrea y Miguel · papás de Noa</cite>
+                </footer>
+              </blockquote>
+            </article>
+
+            <article class="experience-card" role="listitem">
+              <blockquote>
+                <span class="experience-card__quote" aria-hidden="true">“</span>
+                <p>Marta nos ha ayudado muchísimo con nuestra hija en momentos clave que nos costaban bastante, como quitar el pañal, las rutinas de sueño y gestionar sus emociones.</p>
+                <p>Es una profesional fantástica y muy cercana. La recomendamos con los ojos cerrados.</p>
+                <footer class="experience-card__footer">
+                  <cite>Papás de Alba</cite>
+                </footer>
+              </blockquote>
+            </article>
+
+            <article class="experience-card" role="listitem">
+              <blockquote>
+                <span class="experience-card__quote" aria-hidden="true">“</span>
+                <p>¡Pañales fuera!</p>
+                <p>Al principio me parecía un caos despedirnos del pañal, pero con las pautas que Marta nos fue marcando ha sido muy fácil. Algo de ropa de recambio, constancia y paciencia… ¡todo se consigue!</p>
+                <footer class="experience-card__footer">
+                  <cite>Silvia · mamá de Sara y Alicia</cite>
+                </footer>
+              </blockquote>
+            </article>
+
+            <article class="experience-card" role="listitem">
+              <blockquote>
+                <span class="experience-card__quote" aria-hidden="true">“</span>
+                <p>Conocemos a Marta desde hace 4 años. Ella fue la primera persona con la que dejamos a nuestro hijo y siempre estuvo desde el minuto uno para guiarnos como familia, dándonos herramientas para llevar bien las cosas.</p>
+                <p>Marta es una persona muy empática, pero también muy sincera y directa: te va a decir lo que te gusta y, algo súper importante, también lo que no te gusta.</p>
+                <p>Nuestro hijo la quiere con locura y sabemos que dejó una huella imborrable en él.</p>
+                <p>¿La volveríamos a elegir? Evidentemente, sí.</p>
+                <footer class="experience-card__footer">
+                  <cite>Mamá y papá de Thiago</cite>
+                </footer>
+              </blockquote>
+            </article>
+
+            <article class="experience-card" role="listitem">
+              <blockquote>
+                <span class="experience-card__quote" aria-hidden="true">“</span>
+                <p>Tuve la suerte de encontrar a Marta cuando mi primera hija era pequeña. Nos ha guiado en todas las dudas sobre la crianza y nos ha acompañado en el camino hacia la autonomía de nuestros hijos.</p>
+                <p>Cuando llegó mi segundo hijo, no tuve ninguna duda en volver a confiar en ella. En Marta encontré una persona totalmente de confianza, con unos valores muy necesarios en la vida actual.</p>
+                <footer class="experience-card__footer">
+                  <cite>María · mamá de Hugo y Paula</cite>
+                </footer>
+              </blockquote>
+            </article>
+
+            <article class="experience-card" role="listitem">
+              <blockquote>
+                <span class="experience-card__quote" aria-hidden="true">“</span>
+                <p>Marta, quería agradecerte todo lo que nos has ayudado con la educación y las diferentes etapas de nuestro pequeño Alex.</p>
+                <p>También quiero agradecerte tus consejos y la manera en que siempre supiste aportarme conocimiento y cariño.</p>
+                <p>Gracias, gracias, gracias por tu labor. Un abrazo enorme. Te queremos.</p>
+                <footer class="experience-card__footer">
+                  <cite>Naomi · mamá de Alex</cite>
+                </footer>
+              </blockquote>
+            </article>
+
+            <article class="experience-card" role="listitem">
+              <blockquote>
+                <span class="experience-card__quote" aria-hidden="true">“</span>
+                <p>Marta es la mejor. Reúne todas las cualidades para acompañar a nuestros hijos: alegría desbordante, paciencia infinita, rigurosa disciplina y amor por la crianza.</p>
+                <p>Nuestra confianza en ella es y será absoluta.</p>
+                <footer class="experience-card__footer">
+                  <cite>Tati y Juan · papás de Paulo y Xulia</cite>
+                </footer>
+              </blockquote>
+            </article>
+
+            <article class="experience-card" role="listitem">
+              <blockquote>
+                <span class="experience-card__quote" aria-hidden="true">“</span>
+                <p>Gran profesional, muy cercana y siempre dispuesta a ayudarte con todo. Para nosotros fue muy fácil confiarte a nuestro peque; nos transmitiste confianza desde el primer momento.</p>
+                <p>Muchas gracias por todo, Marta.</p>
+                <footer class="experience-card__footer">
+                  <cite>Meli y Miguel · papás de Martín</cite>
+                </footer>
+              </blockquote>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--deep home-final-cta" aria-labelledby="cta-final">
+      <div class="home-final-cta__decoration" aria-hidden="true"></div>
+      <div class="container home-final-cta__content">
+        <p class="section-label">HABLEMOS</p>
+        <h2 id="cta-final">Cada familia necesita encontrar su propia manera</h2>
+        <p>Contadnos qué estáis viviendo y valoraremos juntos cómo puede acompañaros NA CASA.</p>
+        <div class="home-actions">
+          <a href="contacto.html" class="button button--light">Contactar</a>
+          <a href="https://wa.me/34686826958?text=Hola%2C%20he%20visto%20la%20web%20de%20NA%20CASA%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n."
+             class="button button--outline-light" target="_blank" rel="noopener noreferrer">
+            <svg class="button-whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+              <path d="M16.02 4.8c-6.15 0-11.15 4.97-11.15 11.08 0 2.1.6 4.15 1.73 5.92l-1.84 5.43 5.67-1.79a11.23 11.23 0 0 0 5.59 1.48c6.15 0 11.15-4.97 11.15-11.08S22.17 4.8 16.02 4.8Zm0 20.22c-1.73 0-3.42-.49-4.88-1.42l-.35-.22-3.27 1.03 1.06-3.13-.24-.38a9.02 9.02 0 0 1-1.56-5.02c0-5.06 4.14-9.18 9.24-9.18s9.24 4.12 9.24 9.18-4.14 9.14-9.24 9.14Zm5.14-6.86c-.28-.14-1.66-.81-1.92-.9-.26-.1-.45-.14-.64.14-.19.28-.74.9-.9 1.08-.17.19-.33.21-.61.07-.28-.14-1.18-.43-2.25-1.38-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.12.28-.33.42-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.1-.23-.56-.47-.48-.64-.49h-.55c-.19 0-.49.07-.75.35-.26.28-.99.96-.99 2.34s1.02 2.72 1.16 2.91c.14.19 2.01 3.05 4.87 4.27.68.29 1.21.47 1.63.6.68.22 1.3.19 1.79.12.55-.08 1.66-.67 1.89-1.31.23-.65.23-1.2.16-1.31-.07-.12-.26-.19-.54-.33Z" />
+            </svg>
+            <span>Escribir por WhatsApp</span>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -87,7 +403,7 @@
   </footer>
 
   <a class="whatsapp-float"
-     href="https://wa.me/34XXXXXXXXX?text=Hola%2C%20he%20visto%20la%20web%20de%20NA%20CASA%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n."
+     href="https://wa.me/34686826958?text=Hola%2C%20he%20visto%20la%20web%20de%20NA%20CASA%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n."
      target="_blank"
      rel="noopener noreferrer"
      aria-label="Contactar por WhatsApp">
