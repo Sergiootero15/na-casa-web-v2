@@ -83,7 +83,7 @@ Algunas secciones y enlaces permanecen en el código con `hidden`. No forman par
 - Cuatro planes agrupados por etapa y modalidad diurna/nocturna.
 - Horarios, objetivos, contenido incluido y precios.
 - Servicios y bloques editoriales adicionales conservados ocultos.
-- Carrusel de seis experiencias reales en Inicio.
+- Carrusel de ocho experiencias reales de familias que han confiado en Marta a lo largo de su trayectoria profesional en Inicio.
 - Formulario de contacto.
 - CTA y acceso flotante a WhatsApp.
 
@@ -103,7 +103,7 @@ El contenido principal, la navegación y los enlaces siguen disponibles sin Java
 Los siguientes estados están documentados directamente mediante comentarios, atributos o contenido visible:
 
 - Varias secciones editoriales están ocultas temporalmente.
-- Las seis experiencias de Inicio están confirmadas para la V1.
+- Las ocho experiencias reales de familias que han confiado en Marta a lo largo de su trayectoria profesional están confirmadas para la V1.
 - Los perfiles, nombres, trayectoria y fotografías del equipo están confirmados para la V1.
 - Parte del posicionamiento profesional y de la información comercial está pendiente de confirmar.
 - El número oficial de WhatsApp es `+34 686 826 958` (`34686826958` en los enlaces `wa.me`).
