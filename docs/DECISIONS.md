@@ -118,7 +118,7 @@ Determinados enlaces y secciones permanecen en el código, pero están fuera de 
 **Evidencia en el repositorio:**
 
 - Regla global `[hidden]` en `css/styles.css`.
-- Secciones con `hidden` en `index.html` y `planes.html`.
+- Secciones con `hidden` en `index.html`.
 
 **Consecuencia práctica:**
 El contenido oculto no debe eliminarse, publicarse ni utilizarse como patrón general sin una petición editorial explícita. Las modificaciones cercanas deben preservar su estado de visibilidad.

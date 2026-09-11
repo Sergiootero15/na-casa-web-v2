@@ -83,7 +83,7 @@ Algunas secciones y enlaces permanecen en el código con `hidden`. No forman par
 - Perfiles de dos integrantes del equipo.
 - Cuatro planes agrupados por etapa y modalidad diurna/nocturna.
 - Horarios, objetivos, contenido incluido y precios.
-- Servicios y bloques editoriales adicionales conservados ocultos.
+- Bloques editoriales adicionales conservados ocultos en Inicio.
 - Carrusel de ocho experiencias reales de familias que han confiado en Marta a lo largo de su trayectoria profesional en Inicio.
 - Formulario de contacto.
 - CTA y acceso flotante a WhatsApp.
