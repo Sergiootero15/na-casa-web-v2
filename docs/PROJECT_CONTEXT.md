@@ -31,7 +31,8 @@ La cabecera, la navegación, el pie y el acceso flotante a WhatsApp están repet
 
 ## Publicación conocida
 
-- URL pública confirmada: [https://sergiootero15.github.io/na-casa-web-v2/](https://sergiootero15.github.io/na-casa-web-v2/)
+- URL pública canónica confirmada: [https://www.somosnacasa.es](https://www.somosnacasa.es).
+- El dominio raíz `https://somosnacasa.es` redirige a la variante canónica con `www`.
 - La web se publica mediante GitHub Pages.
 - La rama, configuración o mecanismo exacto que origina el despliegue no está documentado dentro del repositorio y permanece como TBD.
 
@@ -127,14 +128,12 @@ Estos puntos describen el estado observado. No constituyen autorización para co
 - Los cambios comunes deben repetirse en las páginas afectadas porque no hay plantillas.
 - Toda la presentación depende de una única hoja CSS y del orden de su cascada.
 - No existe validación o automatización propia del proyecto.
-- El formulario usa `method="post"` y `action="#"`; no existe procesamiento implementado en este repositorio.
+- El formulario usa `method="POST"` y un endpoint externo de Formspree confirmado y operativo; no existe backend propio en este repositorio.
 - El mecanismo de despliegue no está documentado en los archivos actuales.
 
 ## TBD
 
 - Rama, configuración y mecanismo exacto utilizado para publicar en GitHub Pages.
-- Tratamiento real del formulario en el entorno desplegado.
-- Texto definitivo de WhatsApp.
 - Ámbito geográfico, desplazamientos y condiciones comerciales pendientes.
 - Responsable de validar y aprobar el contenido editorial.
 - Navegadores y dispositivos que forman la matriz oficial de soporte.

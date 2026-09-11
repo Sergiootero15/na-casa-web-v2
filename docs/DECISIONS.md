@@ -144,3 +144,23 @@ El repositorio diferencia páginas activas, código histórico y documentación 
 `deprecated/` no debe utilizarse como definición del comportamiento vigente. Los archivos ignorados no se modificarán salvo petición expresa. Ante discrepancias, prevalece la implementación activa.
 
 **Razonamiento histórico:** no documentado.
+
+## DEC-008 — Dominio público canónico
+
+**Estado:** Confirmada para mantenimiento.
+
+**Decisión:**
+La URL pública canónica de NA CASA es `https://www.somosnacasa.es`. El dominio raíz redirige a la variante con `www` y GitHub Pages publica el sitio con HTTPS.
+
+**Evidencia en el repositorio:**
+
+- `CNAME` declara `www.somosnacasa.es`.
+- Las páginas públicas incluyen URL canónica y metadatos Open Graph bajo el dominio confirmado.
+- `robots.txt` referencia el sitemap canónico.
+- `sitemap.xml` enumera las páginas públicas activas con URLs absolutas canónicas.
+
+**Consecuencia práctica:**
+Los metadatos públicos y los archivos de indexación deben usar `https://www.somosnacasa.es`. Las rutas internas de navegación permanecen relativas y las referencias locales de desarrollo no se sustituyen por URLs de producción.
+
+**Razonamiento:**
+El dominio definitivo, la redirección desde el dominio raíz, GitHub Pages y HTTPS fueron confirmados durante la preparación para producción.

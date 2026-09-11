@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /deprecated/
+Disallow: /docs/
+
+Sitemap: https://www.somosnacasa.es/sitemap.xml
